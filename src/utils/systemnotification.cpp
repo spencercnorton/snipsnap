@@ -1,0 +1,104 @@
+#include "systemnotification.h"
+#include "utils/abstractlogger.h"
+#include "utils/confighandler.h"
+
+#include <QApplication>
+#include <QUrl>
+#if !(defined(Q_OS_MACOS) || defined(Q_OS_WIN))
+#include <QDBusConnection>
+#include <QDBusConnectionInterface>
+#include <QDBusInterface>
+#include <QDBusMessage>
+#else
+#include "core/snipsnapdaemon.h"
+#endif
+
+// work-around for snap, which cannot install icons into
+// the system folder, so instead the absolute path to the
+// icon (saved somewhere in /snap/snipsnap/...) is passed
+#ifndef SNIPSNAP_ICON
+#define SNIPSNAP_ICON "snipsnap"
+#endif
+
+SystemNotification::SystemNotification(QObject* parent)
+  : QObject(parent)
+  , m_interface(nullptr)
+{
+#if !(defined(Q_OS_MACOS) || defined(Q_OS_WIN))
+    if (!ConfigHandler().showDesktopNotification()) {
+        return;
+    }
+    auto bus = QDBusConnection::sessionBus();
+    auto* connectionInterface = bus.interface();
+
+    auto service = QStringLiteral("org.freedesktop.Notifications");
+    auto path = QStringLiteral("/org/freedesktop/Notifications");
+    auto interface = QStringLiteral("org.freedesktop.Notifications");
+
+    if (connectionInterface->isServiceRegistered(service)) {
+        m_interface = new QDBusInterface(service, path, interface, bus, this);
+    } else {
+        AbstractLogger::warning(AbstractLogger::Stderr |
+                                AbstractLogger::LogFile)
+          << tr("No DBus System Notification service found");
+    }
+#endif
+}
+
+void SystemNotification::sendMessage(const QString& text,
+                                     const QString& savePath)
+{
+    sendMessage(text, tr("SnipSnap Info"), savePath);
+}
+
+void SystemNotification::sendMessage(const QString& text,
+                                     const QString& title,
+                                     const QString& savePath,
+                                     const int timeout)
+{
+    if (!ConfigHandler().showDesktopNotification()) {
+        return;
+    }
+
+#if defined(Q_OS_MACOS) || defined(Q_OS_WIN)
+    QMetaObject::invokeMethod(
+      this,
+      [&]() {
+          // The call is queued to avoid recursive static initialization of
+          // SnipSnap and ConfigHandler.
+          if (SnipSnapDaemon::instance())
+              SnipSnapDaemon::instance()->sendTrayNotification(
+                text, title, timeout);
+      },
+      Qt::QueuedConnection);
+#else
+    if (nullptr != m_interface && m_interface->isValid()) {
+        QList<QVariant> args;
+        QVariantMap hintsMap;
+        // GNOME resolves a notification's owning app from this hint. Without
+        // it the shell falls back to the app_name ("snipsnap"), which matches
+        // no desktop entry, so it shows the raw name with no per-app settings
+        // and keys the notification group on the *sending process* - every
+        // capture then adds a new group instead of joining SnipSnap's.
+        hintsMap[QStringLiteral("desktop-entry")] =
+          QStringLiteral("tech.norvi.snipsnap");
+        if (!savePath.isEmpty()) {
+            QUrl fullPath = QUrl::fromLocalFile(savePath);
+            // allows the notification to be dragged and dropped
+            hintsMap[QStringLiteral("x-kde-urls")] =
+              QStringList({ fullPath.toString() });
+        }
+
+        args << (qAppName())                 // appname
+             << static_cast<unsigned int>(0) // id
+             << SNIPSNAP_ICON               // icon
+             << title                        // summary
+             << text                         // body
+             << QStringList()                // actions
+             << hintsMap                     // hints
+             << timeout;                     // timeout
+        m_interface->callWithArgumentList(
+          QDBus::AutoDetect, QStringLiteral("Notify"), args);
+    }
+#endif
+}

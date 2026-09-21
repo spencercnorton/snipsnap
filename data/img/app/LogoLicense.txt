@@ -1,0 +1,16 @@
+SnipSnap application icon
+=========================
+
+Copyright © 2026 NorviTech
+
+The SnipSnap aperture-and-crop icon was created as original artwork for this
+project. The initial visual concept was generated with OpenAI image generation,
+then redrawn as project-native SVG artwork and adapted into the raster,
+monochrome, symbolic tray, Windows ICO, and macOS ICNS variants shipped here.
+
+This artwork is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+SPDX-License-Identifier: GPL-3.0-or-later

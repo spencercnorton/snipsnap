@@ -1,0 +1,184 @@
+#!/usr/bin/python3
+"""Switch SnipSnap's external annotator on or off.
+
+Committed captures either open in the optional satty annotator or in
+SnipSnap's own full editor. Which one is used is decided by two settings that
+must agree:
+
+  * the Shell extension's `external-annotator` key, which tells the overlay
+    whether to wait for an editor window before finishing the capture, and
+  * the daemon's `bridgeUseExternalAnnotator` key, which tells it whether to
+    spawn one.
+
+Set only the extension's key and the next capture hangs waiting for a window
+that will never open. This script always writes both.
+"""
+
+import argparse
+import configparser
+import os
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+UUID = "snipsnap-shell-bridge@kleos.norvi.tech"
+SCHEMA = "org.gnome.shell.extensions.flameshot-shell-bridge"
+KEY = "external-annotator"
+INI_KEY = "bridgeUseExternalAnnotator"
+ANNOTATOR = "satty"
+CLIPBOARD_WRITER = "wl-copy"
+DEPENDENCIES = (ANNOTATOR, CLIPBOARD_WRITER)
+
+
+def schema_dir():
+    """Where the extension's compiled schema lives.
+
+    A per-user extension shadows the packaged one in GNOME, so it has to win
+    here too -- otherwise this writes the key the running extension is not
+    reading.
+    """
+    data_home = Path(
+        os.environ.get("XDG_DATA_HOME", Path.home() / ".local" / "share")
+    )
+    candidates = [
+        data_home / "gnome-shell" / "extensions" / UUID / "schemas",
+        Path("/usr/share/gnome-shell/extensions") / UUID / "schemas",
+    ]
+    for candidate in candidates:
+        if (candidate / "gschemas.compiled").is_file():
+            return candidate
+    return None
+
+
+def new_parser():
+    # optionxform: Qt's keys are camelCase and configparser folds case by
+    # default, which would rewrite every unrelated key in the file.
+    # interpolation: a savePath containing a literal % is a ValueError
+    # otherwise, and Qt has no idea what %(name)s means.
+    parser = configparser.ConfigParser(interpolation=None)
+    parser.optionxform = str
+    return parser
+
+
+def ini_path():
+    return Path(
+        os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config")
+    ) / "snipsnap" / "snipsnap.ini"
+
+
+def read_state():
+    directory = schema_dir()
+    extension = None
+    if directory is not None:
+        result = subprocess.run(
+            ["gsettings", "--schemadir", str(directory), "get", SCHEMA, KEY],
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode == 0:
+            extension = result.stdout.strip() == "true"
+
+    parser = new_parser()
+    parser.read(ini_path())
+    daemon = parser.getboolean("General", INI_KEY, fallback=False)
+    return extension, daemon
+
+
+def write_state(enabled):
+    directory = schema_dir()
+    if directory is None:
+        sys.exit(
+            f"error: no compiled schema for {UUID}.\n"
+            "The Shell extension is not installed -- reinstall the snipsnap "
+            "package, or install the extension into ~/.local/share."
+        )
+    subprocess.run(
+        [
+            "gsettings",
+            "--schemadir",
+            str(directory),
+            "set",
+            SCHEMA,
+            KEY,
+            "true" if enabled else "false",
+        ],
+        check=True,
+    )
+
+    path = ini_path()
+    parser = new_parser()
+    parser.read(path)
+    if not parser.has_section("General"):
+        parser.add_section("General")
+    parser.set("General", INI_KEY, "true" if enabled else "false")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w") as handle:
+        parser.write(handle, space_around_delimiters=False)
+
+
+def describe(value):
+    return {True: "on", False: "off", None: "unknown"}[value]
+
+
+def missing_dependencies():
+    return [command for command in DEPENDENCIES if shutil.which(command) is None]
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        prog="snipsnap-annotator", description=__doc__.splitlines()[0]
+    )
+    parser.add_argument(
+        "action",
+        choices=("enable", "disable", "status"),
+        help="enable or disable the external annotator, or report the current state",
+    )
+    action = parser.parse_args().action
+
+    if action == "status":
+        extension, daemon = read_state()
+        found = {command: shutil.which(command) for command in DEPENDENCIES}
+        print(f"extension {KEY}: {describe(extension)}")
+        print(f"daemon    {INI_KEY}: {describe(daemon)}")
+        for command in DEPENDENCIES:
+            print(f"{command}: {found[command] or 'not on PATH'}")
+        if extension is not None and extension != daemon:
+            print(
+                "\nThese disagree. The next capture will misbehave; run "
+                "`snipsnap-annotator enable` or `disable` to fix it.",
+                file=sys.stderr,
+            )
+            return 1
+        missing = [command for command, path in found.items() if path is None]
+        if extension and missing:
+            print(
+                "\nThe external annotator is on but these commands are "
+                f"missing: {', '.join(missing)}. Captures fall back to "
+                "SnipSnap's own editor.",
+                file=sys.stderr,
+            )
+        return 0
+
+    enabled = action == "enable"
+    missing = missing_dependencies() if enabled else []
+    if missing:
+        # Not fatal: the daemon falls back to its native editor if either
+        # command disappears later, so preserve that same behavior here.
+        print(
+            "warning: the external annotator needs "
+            f"{', '.join(missing)}. Captures will fall back to SnipSnap's "
+            "own editor until they are installed -- see "
+            "https://github.com/gabm/Satty and install wl-clipboard.",
+            file=sys.stderr,
+        )
+    write_state(enabled)
+    # The daemon reads the ini through a file watcher, but it samples the
+    # annotator setting once per capture from its own ConfigHandler, so a
+    # running daemon does pick this up without a restart.
+    print(f"external annotator {'enabled' if enabled else 'disabled'}.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

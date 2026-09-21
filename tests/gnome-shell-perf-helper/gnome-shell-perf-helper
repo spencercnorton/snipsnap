@@ -1,0 +1,81 @@
+#!/bin/sh
+# Supervise GNOME Shell's GTK perf helper during nested compositor tests.
+#
+# GNOME Shell 50 waits for org.gnome.Shell.PerfHelper before it invokes an
+# automation module. If the stock helper wedges before registering its D-Bus
+# service, the module never begins and its own bounded waits cannot report it.
+# This wrapper retries only while that well-known name has not appeared. Once
+# the name is owned, the stock helper and the E2E test run unmodified.
+
+set -u
+
+real_helper=${SNIPSNAP_REAL_PERF_HELPER:-/usr/libexec/gnome-shell-perf-helper}
+probe=${SNIPSNAP_PERF_HELPER_PROBE:-/usr/bin/gdbus}
+attempt_limit=${SNIPSNAP_PERF_HELPER_ATTEMPTS:-3}
+probe_limit=${SNIPSNAP_PERF_HELPER_PROBES:-50}
+probe_interval=${SNIPSNAP_PERF_HELPER_PROBE_INTERVAL:-0.1}
+stop_limit=${SNIPSNAP_PERF_HELPER_STOP_PROBES:-10}
+
+if [ ! -x "$real_helper" ]; then
+    echo "SnipSnap E2E: perf helper is not executable: $real_helper" >&2
+    exit 127
+fi
+if [ ! -x "$probe" ]; then
+    echo "SnipSnap E2E: D-Bus probe is not executable: $probe" >&2
+    exit 127
+fi
+
+name_has_owner() {
+    "$probe" call --session --timeout 1 \
+        --dest org.freedesktop.DBus \
+        --object-path /org/freedesktop/DBus \
+        --method org.freedesktop.DBus.NameHasOwner \
+        org.gnome.Shell.PerfHelper 2>/dev/null | grep -Fq '(true,)'
+}
+
+stop_helper() {
+    helper_pid=$1
+    kill -TERM "$helper_pid" 2>/dev/null || return 0
+    stop_probe=0
+    while kill -0 "$helper_pid" 2>/dev/null; do
+        stop_probe=$((stop_probe + 1))
+        if [ "$stop_probe" -ge "$stop_limit" ]; then
+            kill -KILL "$helper_pid" 2>/dev/null || true
+            break
+        fi
+        sleep "$probe_interval"
+    done
+    wait "$helper_pid" 2>/dev/null || true
+}
+
+attempt=1
+while [ "$attempt" -le "$attempt_limit" ]; do
+    "$real_helper" "$@" &
+    child=$!
+    probe_count=0
+
+    while kill -0 "$child" 2>/dev/null; do
+        if name_has_owner; then
+            wait "$child"
+            exit $?
+        fi
+        probe_count=$((probe_count + 1))
+        if [ "$probe_count" -ge "$probe_limit" ]; then
+            break
+        fi
+        sleep "$probe_interval"
+    done
+
+    if kill -0 "$child" 2>/dev/null; then
+        echo "SnipSnap E2E: perf helper did not own its D-Bus name; retrying ($attempt/$attempt_limit)" >&2
+        stop_helper "$child"
+    else
+        wait "$child" 2>/dev/null
+        status=$?
+        echo "SnipSnap E2E: perf helper exited before owning its D-Bus name (status $status); retrying ($attempt/$attempt_limit)" >&2
+    fi
+    attempt=$((attempt + 1))
+done
+
+echo "SnipSnap E2E: perf helper failed to own its D-Bus name after $attempt_limit attempts" >&2
+exit 1

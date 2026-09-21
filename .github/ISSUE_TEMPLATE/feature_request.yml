@@ -1,0 +1,47 @@
+name: Feature request
+description: Propose a change to how SnipSnap works.
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before writing this up, check `snipsnap --help` and the settings window (`snipsnap config`) — the option may already exist — and read the "Out of scope" list in [CONTRIBUTING.md](https://github.com/spencercnorton/snipsnap/blob/main/CONTRIBUTING.md#out-of-scope): SnipSnap will not grow an uploader, an update checker or telemetry. Float half-formed ideas in [Discussions](https://github.com/spencercnorton/snipsnap/discussions) first. Remove anything private (usernames in paths, hostnames, screenshots of a real desktop) from anything you paste.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do that SnipSnap makes hard or impossible today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change, and how would you use it — in the overlay, the editor, a setting, a CLI flag, an environment variable or the package?
+    validations:
+      required: true
+  - type: dropdown
+    id: session
+    attributes:
+      label: Desktop session
+      description: "\"Every session\" means it applies on GNOME Wayland, other Wayland compositors and X11 alike; \"Not session-specific\" means it lives outside capture (editor, settings, CLI, packaging, docs)."
+      options: ["GNOME Wayland with the bridge", "GNOME Wayland, portal fallback", "Other Wayland (KDE, Sway, Hyprland, …)", "X11", "Every session", "Not session-specific"]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: SnipSnap version
+      description: "`snipsnap --version`, or `apt policy snipsnap` if it came from the archive. Tells us whether the change is already in a newer release."
+      placeholder: snipsnap 2.0.2
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds you use today (a key in `~/.config/snipsnap/snipsnap.ini`, a CLI flag, an external annotator via `snipsnap-annotator`, another tool) and why they fall short.
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to send a pull request for this once the approach is agreed.

@@ -1,0 +1,10 @@
+{
+  "uuid": "snipsnap-shell-bridge@kleos.norvi.tech",
+  "name": "SnipSnap Shell Bridge",
+  "description": "Draws SnipSnap's capture overlay inside the compositor, so a selection can span every monitor and no portal dialog appears.",
+  "shell-version": ["50", "51"],
+  "session-modes": ["user"],
+  "settings-schema": "org.gnome.shell.extensions.flameshot-shell-bridge",
+  "url": "https://github.com/spencercnorton/snipsnap",
+  "version": 1
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: none
+SPDX-License-Identifier: CC0-1.0
+-->
+<component type="desktop-application">
+  <id>tech.norvi.snipsnap</id>
+
+  <metadata_license>CC0-1.0</metadata_license>
+
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <name>SnipSnap</name>
+
+  <translation type="qt">Internationalization</translation>
+
+  <developer id="tech.norvi">
+    <name>NorviTech</name>
+  </developer>
+
+  <supports>
+	<control>touch</control>
+  </supports>
+
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+
+  <summary>Take and annotate screenshots</summary>
+
+  <description>
+    <p>
+      Powerful and simple to use screenshot software with built-in
+      editor with advanced features.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Customizable appearance</li>
+      <li>Very easy to use</li>
+      <li>In-app screenshot editing and annotation</li>
+      <li>DBus interface</li>
+      <li>Selection overlay spanning every monitor on GNOME Wayland</li>
+    </ul>
+  </description>
+
+  <content_rating type="oars-1.1" />
+
+  <!-- No screenshots: the inherited ones pointed at a repository that is not
+       ours, and five broken images render worse than none. Add them back when
+       they are hosted somewhere we control. -->
+
+  <url type="homepage">https://github.com/spencercnorton/snipsnap</url>
+  <url type="bugtracker">https://github.com/spencercnorton/snipsnap/issues</url>
+  <url type="vcs-browser">https://github.com/spencercnorton/snipsnap</url>
+
+  <update_contact>apt_AT_globalentry.systems</update_contact>
+
+  <launchable type="desktop-id">tech.norvi.snipsnap.desktop</launchable>
+
+  <categories>
+    <!-- the list can be found in https://specifications.freedesktop.org/menu-spec/latest/category-registry.html -->
+    <category>Utility</category>
+    <category>Graphics</category>
+  </categories>
+
+  <releases>
+    <release version="2.0.2" date="2026-09-21"/>
+    <release version="2.0.1" date="2026-09-10"/>
+    <release version="2.0.0" date="2026-08-12"/>
+    <release version="1.0.3" date="2026-07-27"/>
+    <release version="1.0.2" date="2026-07-27"/>
+    <release version="1.0.1" date="2026-07-27"/>
+    <release version="1.0.0" date="2026-07-26"/>
+  </releases>
+</component>

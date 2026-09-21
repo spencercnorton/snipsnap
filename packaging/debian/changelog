@@ -1,0 +1,217 @@
+snipsnap (2.0.2-1kleos1) unstable; urgency=medium
+
+  * First public release on GitHub: the source tree is published at
+    https://github.com/spencercnorton/snipsnap as a release mirror. No
+    behaviour change -- this is 2.0.1 with its identity, homepage and contact
+    metadata pointed at that repository, a README with captures of the overlay
+    and the editor, and the community files GitHub surfaces.
+  * The source tarball served beside the .deb is now the same exported tree
+    that is published, not an archive of the development checkout.
+  * Replaced the inherited Code of Conduct, which carried an e-mail address,
+    with one that routes reports through private vulnerability reporting.
+
+ -- NorviTech <apt@globalentry.systems>  Mon, 21 Sep 2026 09:00:00 -0600
+
+snipsnap (2.0.1-1kleos1) unstable; urgency=medium
+
+  * Desktop notifications now identify themselves as SnipSnap. They carried no
+    desktop-entry hint, so GNOME could not match them to an installed
+    application: the notification list showed the raw process name "snipsnap"
+    with no per-app notification settings, and -- because an unmatched sender
+    is grouped by process id -- every capture opened its own notification
+    group instead of joining the previous one. Taking six screenshots left six
+    separate entries to dismiss.
+
+ -- NorviTech <apt@globalentry.systems>  Thu, 10 Sep 2026 08:45:00 -0600
+
+snipsnap (2.0.0-1kleos1) unstable; urgency=medium
+
+  * Everything the program calls itself is now SnipSnap. The binary is
+    /usr/bin/snipsnap, the D-Bus name is tech.norvi.snipsnap, the desktop and
+    AppStream IDs are tech.norvi.snipsnap, the icons are named for it, and the
+    GNOME Shell extension is snipsnap-shell-bridge@kleos.norvi.tech. Until now
+    only the display strings had been renamed; everything underneath still
+    identified as the program this was forked from, which is confusing in
+    `gnome-extensions list`, in `busctl`, and in a bug report.
+  * Rename the canonical project from flameshot to snipsnap and update Debian,
+    AppStream, extension, security, contributor, man-page, completion, and
+    release documentation URLs. The old project path remains a redirect for
+    historical links, not a current product identity.
+  * Settings survive the rename. The config moved from ~/.config/flameshot to
+    ~/.config/snipsnap, and the first run copies the old directory across
+    rather than starting you from defaults. The old tree is left untouched, so
+    downgrading still finds it.
+  * `snipsnap-shell-bridge activate` transactionally installs and verifies the
+    per-user GNOME bridge, migrates Print ownership, and retires the extension's
+    previous UUID and autostart entry only after the new bridge and receiver are
+    proven active. Rollback restores the exact legacy state if any later
+    handover step fails.
+  * The compositor-backed Wayland editor now exposes SnipSnap's complete native
+    annotation toolbar, with live GNOME palette changes, high-contrast icons,
+    copy, save, pan, fit, and zoom controls.
+  * Keep the standards-based desktop portal as the bounded fallback for future
+    Wayland compositors, while GNOME uses the prompt-free Shell bridge for
+    multi-monitor region capture.
+  * Install the native Qt Wayland and GTK platform integrations so the package
+    follows the desktop theme instead of depending on whatever happens to be on
+    an existing workstation.
+  * Declare every clean-build and bridge runtime dependency explicitly, and
+    recommend only portal backends that implement the screenshot fallback.
+  * Harden the compositor test against the upstream GNOME perf helper's
+    intermittent pre-D-Bus startup wedge with a bounded, tested supervisor.
+  * Audit the bridge against pinned GNOME Shell and Mutter 51.beta source and
+    declare the major-only GNOME 50/51 compatibility metadata GNOME expects.
+  * /usr/bin/flameshot remains as a compatibility symlink, and the package
+    still Conflicts/Replaces/Provides flameshot. Those exist so an apt upgrade
+    can never silently replace a distribution's own flameshot, and dropping
+    them would reintroduce exactly that.
+  * Removed inherited material belonging to the upstream project: its README,
+    its mkdocs developer site, its RFC process, its snapcraft recipe and a
+    documentation PDF. The metainfo screenshots pointed at a repository that
+    is not ours, so they are gone until they are hosted somewhere that is.
+  * Fixed a build-breaking consequence of the rename found before release:
+    the QHotkey FetchContent URL had been rewritten to a repository that does
+    not exist.
+
+ -- NorviTech <apt@globalentry.systems>  Wed, 12 Aug 2026 17:30:00 -0600
+
+snipsnap (1.0.3-1kleos1) unstable; urgency=medium
+
+  * Declare python3 and libglib2.0-bin. snipsnap-annotator is a python3 script
+    that drives gsettings, and neither was a dependency -- on a machine with
+    only the declared ones it would have died on its shebang. CI could not
+    catch this: the packaging job installs libglib2.0-bin as a build
+    dependency and then runs the helper in that same container. A test now
+    checks the script's interpreter and every command it invokes against the
+    control file instead.
+  * Fix the Homepage URL, which 404ed. `apt show snipsnap` handed every user a
+    dead link, as did the AppStream metadata GNOME Software renders.
+  * Drop Suggests on ca-certificates and openssl. Nothing in this package
+    speaks TLS anywhere: the Imgur uploader and the update checker are both
+    compiled out.
+
+ -- NorviTech <apt@globalentry.systems>  Mon, 27 Jul 2026 17:00:00 -0600
+
+snipsnap (1.0.2-1kleos1) unstable; urgency=medium
+
+  * Report the version the package actually is. The binary said v1.0.0 while
+    apt said 1.0.1-1kleos1, and 1.0.1 existed only to fix the dead capture
+    shortcut -- so anyone checking `snipsnap --version` or the About window to
+    find out whether they had that fix got a number that could not tell them.
+    A test now fails if CMakeLists and this changelog disagree.
+  * Point the AppStream metadata at this fork. It sent "Report an Issue" to
+    the upstream Flameshot tracker, whose maintainers cannot act on reports
+    about an extension that does not exist there, and it still advertised the
+    Imgur uploader that this package's own description says is removed.
+  * Finish the rename in the settings window, the CLI help and error text, and
+    the tray notification titles.
+  * Update the translations so the renamed strings are still translated. They
+    key off the English source text, so every rebranded string had been
+    falling back to English in all 43 locales while its neighbours stayed
+    translated.
+
+ -- NorviTech <apt@globalentry.systems>  Mon, 27 Jul 2026 15:00:00 -0600
+
+snipsnap (1.0.1-1kleos1) unstable; urgency=medium
+
+  * Cycle the Shell extension after activation moves the capture shortcut to
+    Print. On GNOME Shell 50 a live reassignment does not produce a working
+    grab, and every existing check passes anyway -- addKeybinding returns a
+    valid action id, the extension logs the re-grab as successful, and the
+    activation tool only ever compares dconf values. Measured on the
+    reference desktop 2026-07-27: no trigger event was logged for any Print
+    press between activation and a manual disable/enable, and both
+    captures since.
+  * Log a rejected capture instead of discarding it. The keybinding handler
+    had nobody above it to catch a throw, so a failure anywhere in the capture
+    path produced an unresponsive shortcut and an empty journal.
+  * Document that changing the shortcut by hand needs the extension restarted.
+
+ -- NorviTech <apt@globalentry.systems>  Mon, 27 Jul 2026 12:00:00 -0600
+
+snipsnap (1.0.0-1kleos1) unstable; urgency=medium
+
+  * Rename the binary package from flameshot to snipsnap. Published to a
+    public archive, a package called "flameshot" at epoch 1 would outrank
+    every distribution's own flameshot and silently replace it on the next
+    apt upgrade for anyone who added the repository -- permanently, since an
+    epoch never goes away. Conflicts/Replaces/Provides state the real
+    relationship instead: the two share /usr/bin/flameshot, the
+    org.flameshot.Flameshot D-Bus name and ~/.config/flameshot, so they
+    cannot be co-installed, but nothing is hijacked.
+  * Drop the epoch. It existed only to outrank the inherited 14.x versions of
+    the old package name; a new name starts clean at 1.0.0.
+  * Ship the GNOME Shell bridge in the package: the extension and its
+    compiled schema install to /usr/share/gnome-shell/extensions, and the
+    receiver is always compiled in. Previously both were reachable only
+    through the reference desktop's test kit.
+  * Install /usr/bin/snipsnap as a symlink to flameshot so the product name
+    works as a command without breaking existing keybindings and scripts.
+  * Add snipsnap-annotator, which switches the external annotator on and off
+    on both sides of the handshake at once. Setting only one of the two keys
+    hangs the next capture waiting for an editor window that never opens.
+
+ -- NorviTech <apt@globalentry.systems>  Sun, 26 Jul 2026 12:00:00 -0600
+
+flameshot (1:1.0.0-1kleos1) unstable; urgency=medium
+
+  * SnipSnap 1.0.0: the fork restarts its version series at 1.0.0.
+  * Epoch 1 keeps dpkg ordering monotonic over the inherited 14.x
+    versions, which sort higher than 1.0.0 without it.
+
+ -- NorviTech <apt@globalentry.systems>  Sun, 26 Jul 2026 12:00:00 -0600
+
+flameshot (14.1.2-1kleos1) unstable; urgency=medium
+
+  * Isolate Debian package outputs from stale runner workspace artifacts.
+  * Assert the expected version, architecture, and single-package archive.
+
+ -- NorviTech <apt@globalentry.systems>  Sat, 18 Jul 2026 13:21:38 -0600
+
+flameshot (14.1.1-1kleos1) unstable; urgency=medium
+
+  * Reject stale queued portal responses when a request object is reused.
+  * Make monitor-picker window close cancel cleanly and keep failed capture
+    payloads null.
+
+ -- NorviTech <apt@globalentry.systems>  Sat, 18 Jul 2026 13:03:00 -0600
+
+flameshot (14.1.0-1kleos1) unstable; urgency=medium
+
+  * Replace blocking XDG portal capture with a bounded asynchronous state
+    machine and private-session-bus regression tests.
+  * Defer capture widget creation and CLI export until capture completion.
+
+ -- NorviTech <apt@globalentry.systems>  Sat, 18 Jul 2026 12:06:15 -0600
+
+flameshot (14.0.1-1kleos1) unstable; urgency=medium
+
+  * Add the first Ubuntu 26.04 security, build, and theme baseline.
+  * Add release, sanitizer, metadata, and binary-package CI gates.
+
+ -- NorviTech <apt@globalentry.systems>  Fri, 17 Jul 2026 10:03:37 -0600
+
+flameshot (14.0.0-1) unstable; urgency=medium
+
+  * Release for v14.0.0
+
+ -- Jeremy Borgman <borgman.jeremy@pm.me>  Mon, 08 Jun 2026 18:58:50 -0500
+
+
+flameshot (14.0~rc3-1) unstable; urgency=medium
+
+  * Release for v14.0.rc3
+
+ -- Jeremy Borgman <borgman.jeremy@pm.me>  Thu, 28 May 2026 16:51:50 -0500
+
+flameshot (14.0~rc2-1) unstable; urgency=medium
+
+  * Release for v14.0.rc2
+
+ -- Jeremy Borgman <borgman.jeremy@pm.me>  Mon, 18 May 2026 19:16:25 -0500
+
+flameshot (14.0~rc1-1) unstable; urgency=medium
+
+  * Release for v14.0.rc1
+
+ -- Jeremy Borgman <borgman.jeremy@pm.me>  Thu, 02 Mar 2026 19:52:29 -0600

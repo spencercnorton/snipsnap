@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="snipsnap-shell-bridge">
+  <schema id="org.gnome.shell.extensions.flameshot-shell-bridge"
+          path="/org/gnome/shell/extensions/flameshot-shell-bridge/">
+    <key name="show-capture-overlay" type="as">
+      <default>["&lt;Super&gt;&lt;Shift&gt;s"]</default>
+      <summary>Open the SnipSnap all-monitor capture overlay</summary>
+      <description>
+        Keyboard accelerators which capture the GNOME stage and open the
+        all-monitor region selector. Print is configured separately during a
+        managed deployment so it does not conflict with GNOME's own binding.
+      </description>
+    </key>
+    <key name="external-annotator" type="b">
+      <default>false</default>
+      <summary>Hand committed captures to an external annotator</summary>
+      <description>
+        When enabled, the SnipSnap daemon opens committed captures in an
+        external annotation program (satty) instead of its embedded region
+        editor, so no daemon-owned editor window ever appears. The extension
+        then commits without verifying an editor window. The activation
+        manager keeps this key and the daemon's configuration in step; do not
+        enable one side alone.
+      </description>
+    </key>
+  </schema>
+</schemalist>

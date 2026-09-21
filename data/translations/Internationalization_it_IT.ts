@@ -1,0 +1,3229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="it_IT">
+<context>
+    <name>AbstractWidgetList</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/abstract_widget_list.cpp" line="52"/>
+        <source>Add New</source>
+        <translation>Aggiungi Nuovo</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/abstract_widget_list.cpp" line="103"/>
+        <source>Move Up</source>
+        <translation>Sposta Su</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/abstract_widget_list.cpp" line="104"/>
+        <source>Move Down</source>
+        <translation>Sposta Giù</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/abstract_widget_list.cpp" line="105"/>
+        <source>Remove</source>
+        <translation>Rimuovi</translation>
+    </message>
+</context>
+<context>
+    <name>AcceptTool</name>
+    <message>
+        <location filename="../../src/tools/accept/accepttool.cpp" line="31"/>
+        <source>Accept</source>
+        <translation>Accetta</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/accept/accepttool.cpp" line="41"/>
+        <source>Accept the capture</source>
+        <translation>Accetta la cattura</translation>
+    </message>
+</context>
+<context>
+    <name>AppLauncher</name>
+    <message>
+        <location filename="../../src/tools/launcher/applaunchertool.cpp" line="23"/>
+        <source>App Launcher</source>
+        <translation>Avvia App</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/applaunchertool.cpp" line="33"/>
+        <source>Choose an app to open the capture</source>
+        <translation>Scegli un&apos;app per aprire l&apos;acquisizione</translation>
+    </message>
+</context>
+<context>
+    <name>AppLauncherWidget</name>
+    <message>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="51"/>
+        <source>Open With</source>
+        <translation>Apri con</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="80"/>
+        <source>Launch in terminal</source>
+        <translation>Avvia nel terminale</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="81"/>
+        <source>Keep open after selection</source>
+        <translation>Mantieni aperto dopo la selezione</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="117"/>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="151"/>
+        <source>Error</source>
+        <translation>Errore</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="117"/>
+        <source>Unable to write in</source>
+        <translation>Impossibile scrivere</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="151"/>
+        <source>Unable to launch in terminal.</source>
+        <translation>Impossibile avviare nel terminale.</translation>
+    </message>
+</context>
+<context>
+    <name>ArrowTool</name>
+    <message>
+        <location filename="../../src/tools/arrow/arrowtool.cpp" line="78"/>
+        <source>Arrow</source>
+        <translation>Freccia</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/arrow/arrowtool.cpp" line="88"/>
+        <source>Set the Arrow as the paint tool</source>
+        <translation>Imposta la freccia come strumento di disegno</translation>
+    </message>
+</context>
+<context>
+    <name>CaptureLauncher</name>
+    <message>
+        <source>&lt;b&gt;Capture Mode&lt;/b&gt;</source>
+        <translation type="vanished">&lt;b&gt;Modalità Cattura&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.cpp" line="32"/>
+        <source>Rectangular Region</source>
+        <translation>Regione rettangolare</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.cpp" line="38"/>
+        <source>Full Screen (Current Display)</source>
+        <translation>Schermo intero (Visualizzazione Corrente)</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.cpp" line="41"/>
+        <source>Full Screen</source>
+        <translation>Schermo intero</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.cpp" line="46"/>
+        <source>Monitor %1: %2 (%3x%4)</source>
+        <translation>Monitor %1: %2 (%3x%4)</translation>
+    </message>
+    <message>
+        <source>Full Screen (All Monitors)</source>
+        <translation type="vanished">Schermo Intero (tutti i monitor)</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.cpp" line="71"/>
+        <source>No Delay</source>
+        <translation>Nessun ritardo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
+        <source> second</source>
+        <translation> secondo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
+        <source> seconds</source>
+        <translation> secondi</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="188"/>
+        <source>Take new screenshot</source>
+        <translation>Acquisisci nuovo screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="181"/>
+        <source>Area:</source>
+        <translation>Area:</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="179"/>
+        <source>Capture Launcher</source>
+        <translation>Cattura lanciatore</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation type="vanished">Etichetta di testo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="180"/>
+        <source>Capture Mode</source>
+        <translation>Modalità di cattura</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="183"/>
+        <source>Delay:</source>
+        <translation>Ritardo:</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="184"/>
+        <source>Monitor:</source>
+        <translation>Monitor:</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_capturelauncher.h" line="185"/>
+        <source>WxH+x+y</source>
+        <translation>WxH+x+y</translation>
+    </message>
+</context>
+<context>
+    <name>CaptureWidget</name>
+    <message>
+        <source>Unable to capture screen</source>
+        <translation type="vanished">Impossibile acquisire lo schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="468"/>
+        <source>Mouse</source>
+        <translation>Mouse</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="468"/>
+        <source>Select screenshot area</source>
+        <translation>Seleziona l&apos;area dello screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="482"/>
+        <source>Mouse Wheel</source>
+        <translation>Rotellina del mouse</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="482"/>
+        <source>Change tool size</source>
+        <translation>Cambia la dimensione dello strumento</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="483"/>
+        <source>Right Click</source>
+        <translation>Clic destro</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="483"/>
+        <source>Show color picker</source>
+        <translation>Mostra selettore colore</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="485"/>
+        <source>Open side panel</source>
+        <translation>Apri pannello laterale</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="486"/>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="486"/>
+        <source>Exit</source>
+        <translation>Esci</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="527"/>
+        <source>Quit Capture</source>
+        <translation>Esci da Cattura</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="528"/>
+        <source>Are you sure you want to quit capture?</source>
+        <translation>Vuoi davvero uscire dall&apos;acquisizione?</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="533"/>
+        <source>Do not show this again</source>
+        <translation>Non mostrare più questo messaggio</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
+        <source>SnipSnap has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>SnipSnap ha perso la messa a fuoco. Le scorciatoie da tastiera non funzioneranno finché non fai clic da qualche parte.</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
+        <source>Configuration error resolved. Launch `snipsnap gui` again to apply it.</source>
+        <translation>Errore di configurazione risolto. Avvia di nuovo &quot;snipsnap gui&quot; per applicarlo.</translation>
+    </message>
+    <message>
+        <source>Select an area with the mouse, or press Esc to exit.
+Press Enter to capture the screen.
+Press Right Click to show the color picker.
+Use the Mouse Wheel to change the thickness of your tool.
+Press Space to open the side panel.</source>
+        <translation type="vanished">Seleziona un&apos;area con il mouse o premi Esc per uscire.
+Premi Invio per catturare lo schermo.
+Premere il pulsante destro del mouse per visualizzare il selettore dei colori.
+Usa la rotellina del mouse per modificare lo spessore del tuo strumento.
+Premi la barra spaziatrice per aprire il pannello laterale.</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/capture/capturewidget.cpp" line="1215"/>
+        <source>Tool Settings</source>
+        <translation>Impostazioni Strumento</translation>
+    </message>
+</context>
+<context>
+    <name>CircleCountTool</name>
+    <message>
+        <location filename="../../src/tools/circlecount/circlecounttool.cpp" line="69"/>
+        <source>Circle Counter</source>
+        <translation>Contatore circolare</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/circlecount/circlecounttool.cpp" line="87"/>
+        <source>Add an autoincrementing counter bubble</source>
+        <translation>Aggiungi un contatore a bolla autoincrementante</translation>
+    </message>
+</context>
+<context>
+    <name>CircleTool</name>
+    <message>
+        <location filename="../../src/tools/circle/circletool.cpp" line="21"/>
+        <source>Circle</source>
+        <translation>Cerchio</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/circle/circletool.cpp" line="31"/>
+        <source>Set the Circle as the paint tool</source>
+        <translation>Imposta il cerchio come strumento di disegno</translation>
+    </message>
+</context>
+<context>
+    <name>ColorDialog</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="19"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="312"/>
+        <source>Select Color</source>
+        <translation>Seleziona Colore</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="60"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="313"/>
+        <source>Saturation</source>
+        <translation>Saturazione</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="67"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="314"/>
+        <source>Hue</source>
+        <translation>Tonalità</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="84"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="315"/>
+        <source>Hex</source>
+        <translation>Esadecimale</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="91"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="316"/>
+        <source>Blue</source>
+        <translation>Blu</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="128"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="317"/>
+        <source>Value</source>
+        <translation>Valore</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="135"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
+        <source>Green</source>
+        <translation>Verde</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="142"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
+        <source>Alpha</source>
+        <translation>Alfa</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.ui" line="149"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
+        <source>Red</source>
+        <translation>Rosso</translation>
+    </message>
+</context>
+<context>
+    <name>ColorGrabWidget</name>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="56"/>
+        <source>Accept color</source>
+        <translation>Accetta colore</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="56"/>
+        <source>Enter or Left Click</source>
+        <translation>Enter o clic sinistro</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="57"/>
+        <source>Precisely select color</source>
+        <translation>Seleziona con precisione il colore</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="57"/>
+        <source>Hold Left Click</source>
+        <translation>Tieni premuto clic sinistro</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="58"/>
+        <source>Toggle magnifier</source>
+        <translation>Attiva/disattiva lente d&apos;ingrandimento</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="58"/>
+        <source>Space or Right Click</source>
+        <translation>Spazio o clic destro</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="59"/>
+        <source>Cancel</source>
+        <translation>Cancella</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/colorgrabwidget.cpp" line="59"/>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+</context>
+<context>
+    <name>ColorPickerEditor</name>
+    <message>
+        <source>Select Preset:</source>
+        <translation type="vanished">Seleziona Preimpostazione:</translation>
+    </message>
+    <message>
+        <source>Select preset using the spinbox</source>
+        <translation type="vanished">Seleziona il preset usando la casella di selezione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="40"/>
+        <source>Edit Preset:</source>
+        <translation>Modifica Preset:</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="45"/>
+        <source>Enter color to update preset</source>
+        <translation>Immettere il colore per aggiornare il preset</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="65"/>
+        <source>Update</source>
+        <translation>Aggiorna</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="67"/>
+        <source>Press button to update the selected preset</source>
+        <translation>Premere il pulsante per aggiornare il preset selezionato</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="74"/>
+        <source>Delete</source>
+        <translation>Cancella</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="76"/>
+        <source>Press button to delete the selected preset</source>
+        <translation>Premere il pulsante per eliminare il preset selezionato</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="90"/>
+        <source>Add Preset:</source>
+        <translation>Aggiungi Preimpostazione:</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="96"/>
+        <source>Enter color manually or select it using the color-wheel</source>
+        <translation>Immettere il colore manualmente o selezionarlo utilizzando la ruota dei colori</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="106"/>
+        <source>Add</source>
+        <translation>Aggiungi</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="107"/>
+        <source>Press button to add preset</source>
+        <translation>Premere il pulsante per aggiungere il preset</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="130"/>
+        <location filename="../../src/config/colorpickereditor.cpp" line="147"/>
+        <source>Error</source>
+        <translation>Errore</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="131"/>
+        <source>Unable to add preset. Maximum limit reached.</source>
+        <translation>Impossibile aggiungere il preset. Limite massimo raggiunto.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/colorpickereditor.cpp" line="148"/>
+        <source>Unable to remove preset. Minimum limit reached.</source>
+        <translation>Impossibile rimuovere il preset. Limite minimo raggiunto.</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigErrorDetails</name>
+    <message>
+        <location filename="../../src/config/configerrordetails.cpp" line="19"/>
+        <source>Configuration errors</source>
+        <translation>Errori di configurazione</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigHandler</name>
+    <message>
+        <location filename="../../src/utils/confighandler.cpp" line="600"/>
+        <source>Unrecognized setting: &apos;%1&apos;
+</source>
+        <translation>Impostazione non riconosciuta: &apos;%1&apos;
+</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/confighandler.cpp" line="608"/>
+        <source>Unrecognized shortcut name: &apos;%1&apos;.
+</source>
+        <translation>Nome del collegamento non riconosciuto: &apos;%1&apos;.
+</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/confighandler.cpp" line="651"/>
+        <source>Shortcut conflict: &apos;%1&apos; and &apos;%2&apos; have the same shortcut: %3
+</source>
+        <translation>Conflitto collegamento: &apos;%1&apos; e &apos;%2&apos; hanno lo stesso collegamento: %3
+</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/confighandler.cpp" line="689"/>
+        <source>Bad value in &apos;%1&apos;. Expected: %2
+</source>
+        <translation>Valore errato in &apos;%1&apos;. Previsto: %2
+</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/confighandler.cpp" line="738"/>
+        <source>You have successfully resolved the configuration error.</source>
+        <translation>Hai risolto con successo l&apos;errore di configurazione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/confighandler.cpp" line="761"/>
+        <source>The configuration contains an error. Open configuration to resolve.</source>
+        <translation>La configurazione contiene un errore. Apri la configurazione per risolvere.</translation>
+    </message>
+    <message>
+        <source>The configuration contains an error. Falling back to default.</source>
+        <translation type="vanished">La configurazione contiene un errore. Ritorno al default.</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/confighandler.cpp" line="816"/>
+        <source>Bad config key &apos;%1&apos; in ConfigHandler. Please report this as a bug.</source>
+        <translation>Chiave di configurazione &apos;%1&apos; errata in ConfigHandler. Si prega di segnalare questo come un bug.</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigResolver</name>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="13"/>
+        <source>Resolve configuration errors</source>
+        <translation>Risolvere gli errori di configurazione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="49"/>
+        <source>&lt;b&gt;You must resolve all errors before continuing:&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Devi risolvere tutti gli errori prima di continuare:&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="60"/>
+        <source>Reset</source>
+        <translation>Ripristina</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="62"/>
+        <source>Reset to the default value.</source>
+        <translation>Ripristina il valore predefinito.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="76"/>
+        <source>Remove</source>
+        <translation>Rimuovi</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="78"/>
+        <source>Remove this setting.</source>
+        <translation>Rimuovi questa impostazione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="89"/>
+        <source>Some keyboard shortcuts have conflicts.
+This will NOT prevent snipsnap from starting.
+Please solve them manually in the configuration file.</source>
+        <translation>Alcune scorciatoie da tastiera presentano conflitti.
+Ciò NON impedirà l&apos;avvio di snipsnap.
+Si prega di risolverli manualmente nel file di configurazione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="111"/>
+        <source>Resolve all</source>
+        <translation>Risolvere tutto</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="112"/>
+        <source>Resolve all listed errors.</source>
+        <translation>Risolvere tutti gli errori elencati.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configresolver.cpp" line="124"/>
+        <source>Details</source>
+        <translation>Dettagli</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigWindow</name>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="39"/>
+        <source>Configuration</source>
+        <translation>Configurazione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="67"/>
+        <source>Interface</source>
+        <translation>Interfaccia</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="77"/>
+        <source>Filename Editor</source>
+        <translation>Editor nome file</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="58"/>
+        <source>General</source>
+        <translation>Generale</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="86"/>
+        <source>Shortcuts</source>
+        <translation>Scorciatoie</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="119"/>
+        <source>Resolve</source>
+        <translation>Risolvere</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="123"/>
+        <source>&lt;b&gt;Configuration file has errors. Resolve them before continuing.&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Il file di configurazione contiene errori. Risolvili prima di continuare.&lt;/b&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>Controller</name>
+    <message>
+        <source>New version %1 is available</source>
+        <translation type="vanished">È disponibile la nuova versione %1</translation>
+    </message>
+    <message>
+        <source>You have the latest version</source>
+        <translation type="vanished">Hai l&apos;ultima versione</translation>
+    </message>
+    <message>
+        <source>Failed to get information about the latest version.</source>
+        <translation type="vanished">Impossibile ottenere informazioni sull&apos;ultima versione.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="vanished">Errore</translation>
+    </message>
+    <message>
+        <source>Unable to close active modal widgets</source>
+        <translation type="vanished">Impossibile chiudere i widget modali attivi</translation>
+    </message>
+    <message>
+        <source>&amp;Take Screenshot</source>
+        <translation type="vanished">&amp;Acquisisci screenshot</translation>
+    </message>
+    <message>
+        <source>&amp;Open Launcher</source>
+        <translation type="vanished">&amp;Apri Launcher</translation>
+    </message>
+    <message>
+        <source>&amp;Configuration</source>
+        <translation type="vanished">&amp;Configurazione</translation>
+    </message>
+    <message>
+        <source>&amp;About</source>
+        <translation type="vanished">&amp;Informazioni</translation>
+    </message>
+    <message>
+        <source>Check for updates</source>
+        <translation type="vanished">Verifica la disponibilità di aggiornamenti</translation>
+    </message>
+    <message>
+        <source>&amp;Quit</source>
+        <translation type="vanished">&amp;Esci</translation>
+    </message>
+    <message>
+        <source>&amp;Latest Uploads</source>
+        <translation type="vanished">&amp;Ultimi caricamenti</translation>
+    </message>
+    <message>
+        <source>URL copied to clipboard.</source>
+        <translation type="vanished">URL copiato negli appunti.</translation>
+    </message>
+</context>
+<context>
+    <name>CopyTool</name>
+    <message>
+        <location filename="../../src/tools/copy/copytool.cpp" line="24"/>
+        <source>Copy</source>
+        <translation>Copia</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/copy/copytool.cpp" line="34"/>
+        <source>Copy selection to clipboard</source>
+        <translation>Copia la selezione negli appunti</translation>
+    </message>
+    <message>
+        <source>Copy the selection into the clipboard</source>
+        <translation type="vanished">Copia la selezione negli appunti</translation>
+    </message>
+</context>
+<context>
+    <name>DBusUtils</name>
+    <message>
+        <source>Unable to connect via DBus</source>
+        <translation type="vanished">Impossibile connettersi tramite DBus</translation>
+    </message>
+</context>
+<context>
+    <name>ExitTool</name>
+    <message>
+        <location filename="../../src/tools/exit/exittool.cpp" line="24"/>
+        <source>Exit</source>
+        <translation>Uscita</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/exit/exittool.cpp" line="34"/>
+        <source>Leave the capture screen</source>
+        <translation>Esci dalla schermata di acquisizione</translation>
+    </message>
+</context>
+<context>
+    <name>FileNameEditor</name>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="25"/>
+        <source>Edit the name of your captures:</source>
+        <translation>Modifica il nome delle tue acquisizioni:</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="29"/>
+        <source>Edit:</source>
+        <translation>Modifica:</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="31"/>
+        <source>Preview:</source>
+        <translation>Anteprima:</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="74"/>
+        <source>Save</source>
+        <translation>Salva</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="77"/>
+        <source>Saves the pattern</source>
+        <translation>Salva il modello</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="79"/>
+        <source>Restore</source>
+        <translation>Ripristina</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation type="vanished">Ripristina</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="82"/>
+        <source>Restores the saved pattern</source>
+        <translation>Ripristina il modello salvato</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="84"/>
+        <source>Clear</source>
+        <translation>Pulisci</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/filenameeditor.cpp" line="90"/>
+        <source>Deletes the name</source>
+        <translation>Elimina il nome</translation>
+    </message>
+</context>
+<context>
+    <name>SnipSnap</name>
+    <message>
+        <location filename="../../src/core/snipsnap.cpp" line="122"/>
+        <source>Error</source>
+        <translation>Errore</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/snipsnap.cpp" line="122"/>
+        <source>Unable to close active modal widgets</source>
+        <translation>Impossibile chiudere i widget modali attivi</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/snipsnap.cpp" line="441"/>
+        <source>URL copied to clipboard.</source>
+        <translation>URL copiato negli appunti.</translation>
+    </message>
+</context>
+<context>
+    <name>SnipSnapDaemon</name>
+    <message>
+        <source>New version %1 is available</source>
+        <translation type="vanished">È disponibile la nuova versione %1</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/snipsnapdaemon.cpp" line="272"/>
+        <location filename="../../src/core/snipsnapdaemon.cpp" line="436"/>
+        <source>You have the latest version</source>
+        <translation>Hai l&apos;ultima versione</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/snipsnapdaemon.cpp" line="445"/>
+        <source>Failed to get information about the latest version.</source>
+        <translation>Impossibile ottenere informazioni sull&apos;ultima versione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/snipsnapdaemon.cpp" line="468"/>
+        <source>Unable to connect via DBus</source>
+        <translation>Impossibile connettersi tramite DBus</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralConf</name>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="195"/>
+        <location filename="../../src/config/generalconf.cpp" line="379"/>
+        <source>Import</source>
+        <translation>Importa</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="201"/>
+        <location filename="../../src/config/generalconf.cpp" line="210"/>
+        <location filename="../../src/config/generalconf.cpp" line="235"/>
+        <location filename="../../src/config/generalconf.cpp" line="754"/>
+        <source>Error</source>
+        <translation>Errore</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="201"/>
+        <source>Unable to read file.</source>
+        <translation>Impossibile leggere il file.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="210"/>
+        <location filename="../../src/config/generalconf.cpp" line="235"/>
+        <source>Unable to write file.</source>
+        <translation>Impossibile scrivere il file.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="222"/>
+        <source>Save File</source>
+        <translation>Salva il file</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="244"/>
+        <source>Confirm Reset</source>
+        <translation>Conferma il ripristino</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="245"/>
+        <source>Are you sure you want to reset the configuration?</source>
+        <translation>Sei sicuro/a di voler ripristinare la configurazione?</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="276"/>
+        <source>Show help message</source>
+        <translation>Mostra messaggio di aiuto</translation>
+    </message>
+    <message>
+        <source>Show the help message at the beginning in the capture mode.</source>
+        <translation type="vanished">Mostra il messaggio di aiuto all&apos;inizio nella modalità di acquisizione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="301"/>
+        <source>Show the side panel button</source>
+        <translation>Mostra il pulsante del pannello laterale</translation>
+    </message>
+    <message>
+        <source>Show the side panel toggle button in the capture mode.</source>
+        <translation type="vanished">Mostra il pulsante di attivazione/disattivazione del pannello laterale nella modalità di acquisizione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="314"/>
+        <source>Show desktop notifications</source>
+        <translation>Mostra notifiche desktop</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="339"/>
+        <source>Show tray icon</source>
+        <translation>Mostra icona nella barra delle applicazioni</translation>
+    </message>
+    <message>
+        <source>Show the systemtray icon</source>
+        <translation type="vanished">Mostra l&apos;icona sulla barra delle applicazioni</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="352"/>
+        <source>Confirmation required to delete screenshot from the latest uploads</source>
+        <translation>Conferma richiesta per eliminare screenshot dagli ultimi caricamenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="367"/>
+        <source>Configuration File</source>
+        <translation>File di Configurazione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="372"/>
+        <source>Export</source>
+        <translation>Esporta</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="386"/>
+        <source>Reset</source>
+        <translation>Ripristina</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="397"/>
+        <source>Automatic check for updates</source>
+        <translation>Controllo automatico degli aggiornamenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="411"/>
+        <source>Allow multiple snipsnap GUI instances simultaneously</source>
+        <translation>Consenti più istanze della GUI di snipsnap contemporaneamente</translation>
+    </message>
+    <message>
+        <source>This allows you to take screenshots of snipsnap itself for example.</source>
+        <translation type="vanished">Ciò ti consente di acquisire schermate di SnipSnap stesso, ad esempio.</translation>
+    </message>
+    <message>
+        <source>Automatically close daemon when it is not needed</source>
+        <translation type="vanished">Chiudi automaticamente il demone quando non è necessario</translation>
+    </message>
+    <message>
+        <source>Launch at startup</source>
+        <translation type="vanished">Esegui all&apos;avvio</translation>
+    </message>
+    <message>
+        <source>Launch SnipSnap</source>
+        <translation type="vanished">Esegui SnipSnap</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="448"/>
+        <source>Show welcome message on launch</source>
+        <translation>Mostra il messaggio di benvenuto all&apos;avvio</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="476"/>
+        <source>Use large predefined color palette</source>
+        <translation>Usa una grande tavolozza di colori predefinita</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="500"/>
+        <source>Copy URL after upload</source>
+        <translation>Copia l&apos;URL dopo il caricamento</translation>
+    </message>
+    <message>
+        <source>Copy URL and close window after upload</source>
+        <translation type="vanished">Copia l&apos;URL e chiudi la finestra dopo il caricamento</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="512"/>
+        <source>Save image after copy</source>
+        <translation>Salva l&apos;immagine dopo la copia</translation>
+    </message>
+    <message>
+        <source>Save image file after copying it</source>
+        <translation type="vanished">Salva il file immagine dopo averlo copiato</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="277"/>
+        <source>Show the help message at the beginning in the capture mode</source>
+        <translation>Mostra il messaggio di aiuto all&apos;inizio nella modalità di acquisizione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="287"/>
+        <source>Use last region for GUI mode</source>
+        <translation>Utilizza l&apos;ultima regione per la modalità GUI</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="289"/>
+        <source>Use the last region as the default selection for the next screenshot in GUI mode</source>
+        <translation>Utilizza l&apos;ultima regione come selezione predefinita per lo screenshot successivo in modalità GUI</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="303"/>
+        <source>Show the side panel toggle button in the capture mode</source>
+        <translation>Mostra il pulsante di attivazione/disattivazione del pannello laterale nella modalità di acquisizione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="315"/>
+        <source>Enable desktop notifications</source>
+        <translation>Abilita notifiche desktop</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="326"/>
+        <source>Show abort notifications</source>
+        <translation>Mostra notifiche di interruzione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="327"/>
+        <source>Enable abort notifications</source>
+        <translation>Abilita notifiche di interruzione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="340"/>
+        <source>Show icon in the system tray</source>
+        <translation>Mostra l&apos;icona nella barra delle applicazioni</translation>
+    </message>
+    <message>
+        <source>Use grim to capture screenshots</source>
+        <translation type="vanished">Usa Grim per catturare screenshot</translation>
+    </message>
+    <message>
+        <source>Grim is a wayland only utility to capture screens based on the screencopy protocol. Generally only enable on minimal wayland window managers like sway, hyprland, etc.</source>
+        <translation type="vanished">Grim è un&apos;utilità esclusiva di Wayland per catturare schermate basata sul protocollo Screencopy. Generalmente è abilitata solo su window manager Wayland minimali come Sway, Hyprland, ecc.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="355"/>
+        <source>Ask for confirmation to delete screenshot from the latest uploads</source>
+        <translation>Chiedi conferma per eliminare screenshot dagli ultimi caricamenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="398"/>
+        <source>Check for updates automatically</source>
+        <translation>Controlla automaticamente gli aggiornamenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="412"/>
+        <source>This allows you to take screenshots of SnipSnap itself for example</source>
+        <translation>Ciò ti consente, ad esempio, di acquisire schermate di SnipSnap stesso</translation>
+    </message>
+    <message>
+        <source>Launch SnipSnap daemon when computer is booted</source>
+        <translation type="vanished">Avvia il demone SnipSnap all&apos;avvio del computer</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="451"/>
+        <source>Show the welcome message box in the middle of the screen while taking a screenshot</source>
+        <translation>Mostra la finestra del messaggio di benvenuto al centro dello schermo mentre acquisisci uno screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="478"/>
+        <source>Use a large predefined color palette</source>
+        <translation>Usa un&apos;ampia tavolozza di colori predefinita</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="488"/>
+        <source>Copy on double click</source>
+        <translation>Copia con doppio clic</translation>
+    </message>
+    <message>
+        <source>Enable Copy on Double Click</source>
+        <translation type="vanished">Abilita copia su doppio clic</translation>
+    </message>
+    <message>
+        <source>Copy URL and close window after uploading was successful</source>
+        <translation type="vanished">Copia l&apos;URL e chiudi la finestra dopo che il caricamento è andato a buon fine</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="424"/>
+        <source>Automatically unload from memory when it is not needed</source>
+        <translation>Scarica automaticamente dalla memoria quando non è necessario</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="425"/>
+        <source>Automatically close daemon (background process) when it is not needed</source>
+        <translation>Chiudere automaticamente il demone (processo in background) quando non è necessario</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="436"/>
+        <source>Launch in background at startup</source>
+        <translation>Avvia in background all&apos;avvio</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="437"/>
+        <source>Launch SnipSnap daemon (background process) when computer is booted</source>
+        <translation>Avvia il demone di SnipSnap (processo in background) all&apos;avvio del computer</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="462"/>
+        <source>Ask before quit capture</source>
+        <translation>Chiedi prima di uscire dall&apos;acquisizione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="465"/>
+        <source>Show the confirmation prompt before ESC quit</source>
+        <translation>Mostra la richiesta di conferma prima di uscire da ESC</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="490"/>
+        <source>Enable Copy to clipboard on Double Click</source>
+        <translation>Abilita Copia negli appunti con doppio clic</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="502"/>
+        <source>Copy URL after uploading was successful</source>
+        <translation>Copia l&apos;URL dopo che il caricamento è riuscito</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="514"/>
+        <source>After copying the screenshot, save it to a file as well</source>
+        <translation>Dopo aver copiato lo screenshot, salvalo anche su un file</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="521"/>
+        <source>Save Path</source>
+        <translation>Salva Percorso</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="537"/>
+        <source>Change...</source>
+        <translation>Cambia...</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="545"/>
+        <source>Use fixed path for screenshots to save</source>
+        <translation>Usa percorso fisso per salvare gli screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="557"/>
+        <source>Preferred save file extension:</source>
+        <translation>Estensione file di salvataggio preferita:</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="586"/>
+        <source>Latest Uploads Max Size</source>
+        <translation>Dimensione Massima Ultimi Caricamenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="608"/>
+        <source>Imgur Application Client ID</source>
+        <translation>Chiave API Imgur</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="639"/>
+        <source>Undo limit</source>
+        <translation>Annulla limite</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="668"/>
+        <source>Use JPG format for clipboard (PNG default)</source>
+        <translation>Usa il formato JPG per gli appunti (impostazione predefinita PNG)</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="675"/>
+        <source>Use lossy JPG format for clipboard (lossless PNG default)</source>
+        <translation>Utilizza il formato JPG con perdita di dati per gli appunti (il formato predefinito è PNG senza perdita di dati)</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="702"/>
+        <source>Copy file path after save</source>
+        <translation>Copia il percorso del file dopo il salvataggio</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="703"/>
+        <source>Copy the file path to clipboard after the file is saved</source>
+        <translation>Copia il percorso del file negli appunti dopo che il file è stato salvato</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="714"/>
+        <source>Anti-aliasing image when zoom the pinned image</source>
+        <translation>Anti-alias dell&apos;immagine quando si esegue lo zoom dell&apos;immagine bloccata</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="716"/>
+        <source>After zooming the pinned image, should the image get smoothened or stay pixelated</source>
+        <translation>Dopo aver ingrandito l&apos;immagine bloccata, l&apos;immagine dovrebbe essere smussata o rimanere pixelata</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="727"/>
+        <location filename="../../src/config/generalconf.cpp" line="729"/>
+        <source>Upload image without confirmation</source>
+        <translation>Carica immagine senza conferma</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="745"/>
+        <source>Choose a Folder</source>
+        <translation>Scegli una Cartella</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="754"/>
+        <source>Unable to write to directory.</source>
+        <translation>Impossibile scrivere nella directory.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="763"/>
+        <source>Show magnifier</source>
+        <translation>Mostra lente d&apos;ingrandimento</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="764"/>
+        <source>Enable a magnifier while selecting the screenshot area</source>
+        <translation>Abilita una lente di ingrandimento durante la selezione dell&apos;area dello screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="775"/>
+        <source>Square shaped magnifier</source>
+        <translation>Lente d&apos;ingrandimento a forma quadrata</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="776"/>
+        <source>Make the magnifier to be square-shaped</source>
+        <translation>Rendi la lente d&apos;ingrandimento di forma quadrata</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="792"/>
+        <source>Milliseconds before geometry display hides; 0 means do not hide</source>
+        <translation>Millisecondi prima che la visualizzazione della geometria venga nascosta; 0 significa non nascondere</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="795"/>
+        <source>Set geometry display timeout (ms)</source>
+        <translation>Imposta il timeout di visualizzazione della geometria (ms)</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="803"/>
+        <source>Selection Geometry Display</source>
+        <translation>Visualizzazione della geometria di selezione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="810"/>
+        <source>Display Location</source>
+        <translation>Posizione di visualizzazione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="813"/>
+        <source>None</source>
+        <translation>Nessuna</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="814"/>
+        <source>Top Left</source>
+        <translation>In alto a sinistra</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="816"/>
+        <source>Top Right</source>
+        <translation>In alto a destra</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="818"/>
+        <source>Bottom Left</source>
+        <translation>In basso a sinistra</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="820"/>
+        <source>Bottom Right</source>
+        <translation>In basso a destra</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="822"/>
+        <source>Center</source>
+        <translation>Centro</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="847"/>
+        <source>Quality range of 0-100; Higher number is better quality and larger file size</source>
+        <translation>Gamma di qualità da 0 a 100; un numero più alto indica una qualità migliore e una dimensione del file maggiore</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="851"/>
+        <source>JPEG Quality</source>
+        <translation>Qualità JPEG</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="862"/>
+        <source>Reverse arrow</source>
+        <translation>Freccia inversa</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="863"/>
+        <source>Draw the arrow head first</source>
+        <translation>Disegna prima la punta della freccia</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="872"/>
+        <source>Insecure Pixelate</source>
+        <translation>Pixellamento non sicuro</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="874"/>
+        <source>Draw the pixelation effect in an insecure but more asethetic way.</source>
+        <translation>Disegna l&apos;effetto pixel in modo insicuro ma più estetico.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="929"/>
+        <source>Capture active monitor (skip monitor selection)</source>
+        <translation>Cattura il monitor attivo (salta la selezione del monitor)</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="931"/>
+        <source>Automatically capture the monitor where the cursor is located instead of showing the monitor selection dialog. This feature is not supported on Wayland.</source>
+        <translation>Cattura automaticamente il monitor in cui si trova il cursore anziché mostrare la finestra di dialogo di selezione del monitor. Questa funzione non è supportata su Wayland.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="952"/>
+        <source>Use legacy X11 screenshot method (deprecated)</source>
+        <translation>Usa il metodo di acquisizione schermata legacy di X11 (obsoleto)</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="954"/>
+        <source>Bypass the freedesktop portal and use Qt&apos;s native X11 screen capture. Enable this if your window manager lacks xdg-desktop-portal (e.g. xmonad, i3). Only effective on X11; ignored on Wayland.</source>
+        <translation>Ignora il portale freedesktop e utilizza la cattura schermo nativa di Qt per X11. Abilita questa opzione se il tuo window manager non include xdg-desktop-portal (ad esempio xmonad, i3). Funziona solo su X11; viene ignorata su Wayland.</translation>
+    </message>
+</context>
+<context>
+    <name>HistoryWidget</name>
+    <message>
+        <source>Latest Uploads</source>
+        <translation type="vanished">Ultimi Caricamenti</translation>
+    </message>
+    <message>
+        <source>Screenshots history is empty</source>
+        <translation type="vanished">La cronologia delle schermate è vuota</translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="vanished">Copia URL</translation>
+    </message>
+    <message>
+        <source>URL copied to clipboard.</source>
+        <translation type="vanished">URL copiato negli appunti.</translation>
+    </message>
+    <message>
+        <source>Open in browser</source>
+        <translation type="vanished">Apri nel browser</translation>
+    </message>
+    <message>
+        <source>Confirm to delete</source>
+        <translation type="vanished">Conferma per eliminare</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete a screenshot from the latest uploads and server?</source>
+        <translation type="vanished">Sei sicuro di voler eliminare un screenshot dagli ultimi caricamenti e dal server?</translation>
+    </message>
+</context>
+<context>
+    <name>ImgS3Uploader</name>
+    <message>
+        <source>URL copied to clipboard.</source>
+        <translation type="obsolete">URL copiato negli appunti.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="obsolete">Errore</translation>
+    </message>
+</context>
+<context>
+    <name>ImgUploadDialog</name>
+    <message>
+        <location filename="../../src/widgets/imguploaddialog.cpp" line="19"/>
+        <source>Upload Confirmation</source>
+        <translation>Conferma di caricamento</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/imguploaddialog.cpp" line="23"/>
+        <source>Do you want to upload this capture?</source>
+        <translation>Vuoi caricare questa acquisizione?</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/imguploaddialog.cpp" line="36"/>
+        <location filename="../../src/widgets/imguploaddialog.cpp" line="37"/>
+        <source>Upload without confirmation</source>
+        <translation>Carica senza conferma</translation>
+    </message>
+</context>
+<context>
+    <name>ImgUploader</name>
+    <message>
+        <source>Delete image</source>
+        <translation type="obsolete">Elimina immagine</translation>
+    </message>
+    <message>
+        <source>Unable to open the URL.</source>
+        <translation type="obsolete">Impossibile aprire l&apos;URL.</translation>
+    </message>
+    <message>
+        <source>URL copied to clipboard.</source>
+        <translation type="obsolete">URL copiato negli appunti.</translation>
+    </message>
+    <message>
+        <source>Screenshot copied to clipboard.</source>
+        <translation type="obsolete">Screenshot copiato negli appunti.</translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="obsolete">Copia URL</translation>
+    </message>
+    <message>
+        <source>Open URL</source>
+        <translation type="obsolete">Apri URL</translation>
+    </message>
+    <message>
+        <source>Image to Clipboard.</source>
+        <translation type="obsolete">Immagine negli Appunti.</translation>
+    </message>
+</context>
+<context>
+    <name>ImgUploaderBase</name>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="38"/>
+        <source>Upload image</source>
+        <translation>Carica immagine</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="50"/>
+        <source>Uploading Image</source>
+        <translation>Caricamento Immagine</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="129"/>
+        <source>Copy URL</source>
+        <translation>Copia URL</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="130"/>
+        <source>Open URL</source>
+        <translation>Apri URL</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="131"/>
+        <source>Delete image</source>
+        <translation>Elimina immagine</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="132"/>
+        <source>Image to Clipboard.</source>
+        <translation>Immagine negli Appunti.</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="133"/>
+        <source>Save image</source>
+        <translation>Salva immagine</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="163"/>
+        <source>Unable to open the URL.</source>
+        <translation>Impossibile aprire l&apos;URL.</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="170"/>
+        <source>URL copied to clipboard.</source>
+        <translation>URL copiato negli appunti.</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="176"/>
+        <source>Screenshot copied to clipboard.</source>
+        <translation>Screenshot copiato negli appunti.</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="190"/>
+        <source>Unable to save the screenshot to disk.</source>
+        <translation>Impossibile salvare lo screenshot su disco.</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="193"/>
+        <source>Screenshot saved.</source>
+        <translation>Screenshot salvato.</translation>
+    </message>
+</context>
+<context>
+    <name>ImgUploaderTool</name>
+    <message>
+        <location filename="../../src/tools/imgupload/imguploadertool.cpp" line="23"/>
+        <source>Image Uploader</source>
+        <translation>Caricatore di immagini</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/imguploadertool.cpp" line="33"/>
+        <source>Upload the selection</source>
+        <translation>Carica la selezione</translation>
+    </message>
+</context>
+<context>
+    <name>ImgurUploader</name>
+    <message>
+        <source>Upload to Imgur</source>
+        <translation type="vanished">Carica su Imgur</translation>
+    </message>
+    <message>
+        <source>Uploading Image</source>
+        <translation type="vanished">Caricamento dell&apos;immagine</translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="vanished">Copia URL</translation>
+    </message>
+    <message>
+        <source>Open URL</source>
+        <translation type="vanished">Apri URL</translation>
+    </message>
+    <message>
+        <source>Delete image</source>
+        <translation type="vanished">Elimina immagine</translation>
+    </message>
+    <message>
+        <source>Image to Clipboard.</source>
+        <translation type="vanished">Immagine negli Appunti.</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/imgur/imguruploader.cpp" line="108"/>
+        <source>Unable to open the URL.</source>
+        <translation>Impossibile aprire l&apos;URL.</translation>
+    </message>
+    <message>
+        <source>URL copied to clipboard.</source>
+        <translation type="vanished">URL copiato negli appunti.</translation>
+    </message>
+    <message>
+        <source>Screenshot copied to clipboard.</source>
+        <translation type="vanished">Screenshot copiato negli appunti.</translation>
+    </message>
+</context>
+<context>
+    <name>ImgurUploaderTool</name>
+    <message>
+        <source>Image Uploader</source>
+        <translation type="vanished">Uploader di immagini</translation>
+    </message>
+    <message>
+        <source>Upload the selection to Imgur</source>
+        <translation type="vanished">Carica la selezione su Imgur</translation>
+    </message>
+</context>
+<context>
+    <name>InfoWindow</name>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="14"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="116"/>
+        <source>About</source>
+        <translation>Informazioni</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="26"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="117"/>
+        <source>Icon</source>
+        <translation>Icona</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="43"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="118"/>
+        <source>License</source>
+        <translation>Licenza</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="56"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="119"/>
+        <source>GPLv3+</source>
+        <translation>GPLv3+</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="89"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="120"/>
+        <source>Version</source>
+        <translation>Versione</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="102"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="121"/>
+        <source>SnipSnap v</source>
+        <translation>SnipSnap v</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="115"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="122"/>
+        <source>OS Info</source>
+        <translation>Info sul sistema operativo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/infowindow.ui" line="128"/>
+        <location filename="../../build/src/snipsnap_autogen/include/ui_infowindow.h" line="123"/>
+        <source>Copy Info</source>
+        <translation>Copia informazioni</translation>
+    </message>
+    <message>
+        <source>&lt;u&gt;&lt;b&gt;License&lt;/b&gt;&lt;/u&gt;</source>
+        <translation type="vanished">&lt;u&gt;&lt;b&gt;Licenza&lt;/b&gt;&lt;/u&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;u&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/u&gt;</source>
+        <translation type="vanished">&lt;u&gt;&lt;b&gt;Versione&lt;/b&gt;&lt;/u&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>InvertTool</name>
+    <message>
+        <location filename="../../src/tools/invert/inverttool.cpp" line="26"/>
+        <source>Invert</source>
+        <translation>Inverti</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/invert/inverttool.cpp" line="36"/>
+        <source>Set Inverter as the paint tool</source>
+        <translation>Imposta l&apos;Inverter come strumento di pittura</translation>
+    </message>
+</context>
+<context>
+    <name>LineTool</name>
+    <message>
+        <location filename="../../src/tools/line/linetool.cpp" line="23"/>
+        <source>Line</source>
+        <translation>Linea</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/line/linetool.cpp" line="33"/>
+        <source>Set the Line as the paint tool</source>
+        <translation>Imposta la Linea come strumento di disegno</translation>
+    </message>
+</context>
+<context>
+    <name>MarkerTool</name>
+    <message>
+        <location filename="../../src/tools/marker/markertool.cpp" line="24"/>
+        <source>Marker</source>
+        <translation>Marcatore</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/marker/markertool.cpp" line="34"/>
+        <source>Set the Marker as the paint tool</source>
+        <translation>Imposta il Pennarello come strumento di disegno</translation>
+    </message>
+</context>
+<context>
+    <name>MonitorPreview</name>
+    <message>
+        <location filename="../../src/utils/monitorpreview.cpp" line="31"/>
+        <source>Monitor %1: %2
+Click to select</source>
+        <translation>Monitor %1: %2
+Fare clic per selezionare</translation>
+    </message>
+</context>
+<context>
+    <name>MoveTool</name>
+    <message>
+        <location filename="../../src/tools/move/movetool.cpp" line="24"/>
+        <source>Move</source>
+        <translation>Sposta</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/move/movetool.cpp" line="34"/>
+        <source>Move the selection area</source>
+        <translation>Sposta l&apos;area di selezione</translation>
+    </message>
+</context>
+<context>
+    <name>PencilTool</name>
+    <message>
+        <location filename="../../src/tools/pencil/penciltool.cpp" line="18"/>
+        <source>Pencil</source>
+        <translation>Matita</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pencil/penciltool.cpp" line="28"/>
+        <source>Set the Pencil as the paint tool</source>
+        <translation>Imposta la matita come strumento di pittura</translation>
+    </message>
+</context>
+<context>
+    <name>PinTool</name>
+    <message>
+        <location filename="../../src/tools/pin/pintool.cpp" line="24"/>
+        <source>Pin Tool</source>
+        <translation>Blocca Strumento</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pintool.cpp" line="34"/>
+        <source>Pin image on the desktop</source>
+        <translation>Blocca immagine sul desktop</translation>
+    </message>
+</context>
+<context>
+    <name>PinWidget</name>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="282"/>
+        <source>Context menu</source>
+        <translation>Context menu</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="284"/>
+        <source>Copy to clipboard</source>
+        <translation>Copia negli appunti</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="291"/>
+        <source>Save to file</source>
+        <translation>Salva su file</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="298"/>
+        <source>Rotate Right</source>
+        <translation>Ruota a destra</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="303"/>
+        <source>Rotate Left</source>
+        <translation>Ruota a sinistra</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="308"/>
+        <source>Increase Opacity</source>
+        <translation>Aumenta l&apos;opacità</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="315"/>
+        <source>Decrease Opacity</source>
+        <translation>Diminuisci l&apos;opacità</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="322"/>
+        <source>Close</source>
+        <translation>Chiudi</translation>
+    </message>
+</context>
+<context>
+    <name>PixelateTool</name>
+    <message>
+        <location filename="../../src/tools/pixelate/pixelatetool.cpp" line="28"/>
+        <source>Pixelate</source>
+        <translation>Pixellato</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pixelate/pixelatetool.cpp" line="38"/>
+        <source>Set Pixelate as the paint tool.</source>
+        <translation>Imposta Pixelate come strumento di disegno.</translation>
+    </message>
+    <message>
+        <source>Set Pixelate as the paint tool</source>
+        <translation type="vanished">Imposta Pixelate come strumento di disegno</translation>
+    </message>
+</context>
+<context>
+    <name>PrimaryInstanceWidget</name>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/primaryinstancewidget.cpp" line="21"/>
+        <source>Primary instance</source>
+        <translation>Istanza primaria</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/primaryinstancewidget.cpp" line="22"/>
+        <source>&lt;b&gt;Primary instance.&lt;/b&gt; Messages received from secondaries:</source>
+        <translation>&lt;b&gt;Istanza primaria.&lt;/b&gt; Messaggi ricevuti dalle istanze secondarie:</translation>
+    </message>
+</context>
+<context>
+    <name>QHotkey</name>
+    <message>
+        <source>Failed to register %1. Error: %2</source>
+        <translation type="vanished">Impossibile registrare %1. Errore: %2</translation>
+    </message>
+    <message>
+        <source>Failed to unregister %1. Error: %2</source>
+        <translation type="vanished">Impossibile annullare la registrazione di %1. Errore: %2</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../../src/cli/commandlineparser.cpp" line="54"/>
+        <source>Options</source>
+        <translation>Opzioni</translation>
+    </message>
+    <message>
+        <source>Arguments</source>
+        <translation type="vanished">Argomenti</translation>
+    </message>
+    <message>
+        <source>arguments</source>
+        <translation type="vanished">argomenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/cli/commandlineparser.cpp" line="68"/>
+        <source>Subcommands</source>
+        <translation>Sottocomandi</translation>
+    </message>
+    <message>
+        <location filename="../../src/cli/commandlineparser.cpp" line="328"/>
+        <source>subcommands</source>
+        <translation>Sottocomandi</translation>
+    </message>
+    <message>
+        <location filename="../../src/cli/commandlineparser.cpp" line="329"/>
+        <source>Usage</source>
+        <translation>Utilizzo</translation>
+    </message>
+    <message>
+        <location filename="../../src/cli/commandlineparser.cpp" line="329"/>
+        <source>options</source>
+        <translation>opzioni</translation>
+    </message>
+    <message>
+        <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
+        <source>Per default runs SnipSnap in the background and adds a tray icon for configuration.</source>
+        <translation>Per impostazione predefinita, SnipSnap viene eseguito in background e aggiunge un&apos;icona nella barra per la configurazione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="251"/>
+        <source>Unable to connect via DBus</source>
+        <translation>Impossibile connettersi tramite DBus</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="268"/>
+        <source>Powerful yet simple to use screenshot software.</source>
+        <translation>Software di screenshot potente ma semplice da usare.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="269"/>
+        <source>See</source>
+        <translation>Vedi</translation>
+    </message>
+    <message>
+        <source>Capture the entire desktop.</source>
+        <translation type="vanished">Cattura l&apos;intero desktop.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="275"/>
+        <source>Open the capture launcher.</source>
+        <translation>Apri il programma di avvio per l&apos;acquisizione.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="278"/>
+        <source>Start a manual capture in GUI mode.</source>
+        <translation>Avvia un&apos;acquisizione manuale in modalità GUI.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="280"/>
+        <source>Configure</source>
+        <translation>Configura</translation>
+    </message>
+    <message>
+        <source>Capture a single screen.</source>
+        <translation type="vanished">Cattura una singola schermata.</translation>
+    </message>
+    <message>
+        <source>Path where the capture will be saved</source>
+        <translation type="vanished">Percorso in cui verrà salvata l&apos;acquisizione</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="273"/>
+        <source>Capture screenshot of all monitors at the same time.</source>
+        <translation>Cattura screenshot di tutti i monitor contemporaneamente.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="283"/>
+        <source>Capture a screenshot of the specified monitor.</source>
+        <translation>Cattura uno screenshot del monitor specificato.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="288"/>
+        <source>Existing directory or new file to save to</source>
+        <translation>Directory esistente o nuovo file in cui salvare</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="291"/>
+        <source>Save the capture to the clipboard</source>
+        <translation>Salva la cattura negli appunti</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="293"/>
+        <source>Pin the capture to the screen</source>
+        <translation>Blocca l&apos;acquisizione sullo schermo</translation>
+    </message>
+    <message>
+        <source>Upload screenshot</source>
+        <translation type="vanished">Upload screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="295"/>
+        <source>Delay time in milliseconds</source>
+        <translation>Tempo di ritardo in millisecondi</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="300"/>
+        <source>Repeat screenshot with previously selected region</source>
+        <translation>Ripeti lo screenshot con la regione precedentemente selezionata</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="303"/>
+        <source>Screenshot region to select</source>
+        <translation>Screenshot della regione da selezionare</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="306"/>
+        <source>Set the filename pattern</source>
+        <translation>Imposta il modello del nome del file</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="310"/>
+        <source>Accept capture as soon as a selection is made</source>
+        <translation>Accetta l&apos;acquisizione non appena viene effettuata una selezione</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="312"/>
+        <source>Enable or disable the trayicon</source>
+        <translation>Abilita o disabilita l&apos;icona della barra delle applicazioni</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="316"/>
+        <source>Enable or disable run at startup</source>
+        <translation>Abilita o disabilita l&apos;esecuzione all&apos;avvio</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="320"/>
+        <source>Enable or disable the notifications</source>
+        <translation>Abilitare o disabilitare le notifiche</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="323"/>
+        <source>Check the configuration for errors</source>
+        <translation>Controllare la configurazione per errori</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="326"/>
+        <source>Show the help message in the capture mode</source>
+        <translation>Mostra il messaggio di aiuto nella modalità di acquisizione</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="329"/>
+        <source>Define the main UI color</source>
+        <translation>Definisci il colore dell&apos;interfaccia utente principale</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="333"/>
+        <source>Define the contrast UI color</source>
+        <translation>Definisci il colore dell&apos;interfaccia utente del contrasto</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="336"/>
+        <source>Print raw PNG capture</source>
+        <translation>Stampa l&apos;acquisizione raw PNG</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="339"/>
+        <source>Print geometry of the selection in the format WxH+X+Y. Does nothing if raw is specified</source>
+        <translation>Stampa la geometria della selezione nel formato WxH+X+Y. Non fa nulla se raw è specificato</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="343"/>
+        <source>Define the screen to capture (starting from 0)</source>
+        <translation>Definisci lo schermo da catturare (a partire da 0)</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="349"/>
+        <source>Interactively select and edit the screenshot region</source>
+        <translation>Seleziona e modifica in modo interattivo l&apos;area dello screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="366"/>
+        <source>Invalid delay, it must be a number greater than 0</source>
+        <translation>Ritardo non valido, deve essere un numero maggiore di 0</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="369"/>
+        <source>Invalid region, use &apos;WxH+X+Y&apos; or &apos;all&apos; or &apos;screen0/screen1/...&apos;.</source>
+        <translation>Regione non valida, usa WxH+X+Y&apos; o &apos;tutto&apos; o &apos;schermo0/schermo1/...&apos;.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="382"/>
+        <source>Invalid path, must be an existing directory or a new file in an existing directory</source>
+        <translation>Percorso non valido, deve essere una directory esistente o un nuovo file in una directory esistente</translation>
+    </message>
+    <message>
+        <source>Define the screen to capture</source>
+        <translation type="vanished">Definisci lo schermo da catturare</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="344"/>
+        <source>default: screen containing the cursor</source>
+        <translation>default: schermata contenente il cursore</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="345"/>
+        <source>Screen number</source>
+        <translation>Numero di schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="357"/>
+        <source>Invalid color, this flag supports the following formats:
+- #RGB (each of R, G, and B is a single hex digit)
+- #RRGGBB
+- #RRRGGGBBB
+- #RRRRGGGGBBBB
+- Named colors like &apos;blue&apos; or &apos;red&apos;
+You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
+        <translation>Colore non valido, questo flag supporta i seguenti formati:
+- #RGB (ciascuno di R, G e B è una singola cifra esadecimale)
+- #RRGGBB
+- #RRRGGGBBB
+- #RRRRGGGGBBBB
+- Colori denominati come &apos;blu&apos; o &apos;rosso&apos;
+You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translation>
+    </message>
+    <message>
+        <source>Invalid delay, it must be higher than 0</source>
+        <translation type="vanished">Ritardo non valido, deve essere maggiore di 0</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="368"/>
+        <source>Invalid screen number, it must be non negative</source>
+        <translation>Numero di schermo non valido, deve essere non negativo</translation>
+    </message>
+    <message>
+        <source>Invalid path, it must be a real path in the system</source>
+        <translation type="vanished">Percorso non valido, deve essere un percorso reale nel sistema</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="395"/>
+        <source>Invalid value, it must be defined as &apos;true&apos; or &apos;false&apos;</source>
+        <translation>Valore non valido, deve essere definito come &quot;vero&quot; o &quot;falso&quot;</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/snipsnap.cpp" line="168"/>
+        <source>Requested screen exceeds screen count</source>
+        <translation>La schermata richiesta supera il conteggio delle schermate</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/snipsnap.cpp" line="418"/>
+        <source>Full screen screenshot pinned to screen</source>
+        <translation>Schermata a schermo intero bloccata sullo schermo</translation>
+    </message>
+    <message>
+        <source>URL copied to clipboard.</source>
+        <translation type="vanished">URL copiato negli appunti.</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/openwithprogram.cpp" line="30"/>
+        <source>Error</source>
+        <translation>Errore</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/launcher/openwithprogram.cpp" line="31"/>
+        <source>Unable to write in</source>
+        <translation>Impossibile scrivere</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="204"/>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="206"/>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="270"/>
+        <source>Capture saved to clipboard.</source>
+        <translation>Cattura salvata negli appunti.</translation>
+    </message>
+    <message>
+        <source>Capture saved to clipboard</source>
+        <translation type="vanished">Cattura salvata negli appunti</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="190"/>
+        <source>Error while saving to clipboard</source>
+        <translation>Errore durante il salvataggio negli appunti</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="64"/>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="349"/>
+        <source>Capture saved as </source>
+        <translation>Cattura salvata come </translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="69"/>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="362"/>
+        <source>Error trying to save as </source>
+        <translation>Errore durante il tentativo di salvare come </translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="326"/>
+        <source>Save screenshot</source>
+        <translation>Salva screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="358"/>
+        <source>Path copied to clipboard as </source>
+        <translation>Percorso copiato negli appunti come </translation>
+    </message>
+    <message>
+        <source>Saving canceled</source>
+        <translation type="vanished">Salvataggio annullato</translation>
+    </message>
+    <message>
+        <source>Save canceled</source>
+        <translation type="vanished">Salvataggio annullato</translation>
+    </message>
+    <message>
+        <source>Capture is saved and copied to the clipboard as </source>
+        <translation type="vanished">L&apos;acquisizione viene salvata e copiata negli appunti come </translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screenshotsaver.cpp" line="369"/>
+        <source>Save Error</source>
+        <translation>Salva errore</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="83"/>
+        <source>Hello, I&apos;m here! Click icon in the tray to take a screenshot or click with a right button to see more options.</source>
+        <translation>Ciao sono qui! Fare clic sull&apos;icona nella barra delle applicazioni per acquisire uno screenshot o fare clic con il pulsante destro per visualizzare più opzioni.</translation>
+    </message>
+    <message>
+        <source>Toggle side panel</source>
+        <translation type="vanished">Attiva/disattiva il pannello laterale</translation>
+    </message>
+    <message>
+        <source>Resize selection left 1px</source>
+        <translation type="vanished">Ridimensiona la selezione a sinistra di 1px</translation>
+    </message>
+    <message>
+        <source>Resize selection right 1px</source>
+        <translation type="vanished">Ridimensiona la selezione a destra di 1px</translation>
+    </message>
+    <message>
+        <source>Resize selection up 1px</source>
+        <translation type="vanished">Ridimensiona la selezione sopra di 1px</translation>
+    </message>
+    <message>
+        <source>Resize selection down 1px</source>
+        <translation type="vanished">Ridimensiona la selezione giù di 1 px</translation>
+    </message>
+    <message>
+        <source>Select entire screen</source>
+        <translation type="vanished">Seleziona tutto lo schermo</translation>
+    </message>
+    <message>
+        <source>Move selection left 1px</source>
+        <translation type="vanished">Sposta la selezione a sinistra di 1 px</translation>
+    </message>
+    <message>
+        <source>Move selection right 1px</source>
+        <translation type="vanished">Sposta la selezione a destra di 1 px</translation>
+    </message>
+    <message>
+        <source>Move selection up 1px</source>
+        <translation type="vanished">Sposta la selezione sopra di 1 px</translation>
+    </message>
+    <message>
+        <source>Move selection down 1px</source>
+        <translation type="vanished">Sposta la selezione giù di 1 px</translation>
+    </message>
+    <message>
+        <source>Commit text in text area</source>
+        <translation type="vanished">Conferma testo nell&apos;area testo</translation>
+    </message>
+    <message>
+        <source>Delete current tool</source>
+        <translation type="vanished">Elimina lo strumento corrente</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="208"/>
+        <source>Quit capture</source>
+        <translation>Esci dalla cattura</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="224"/>
+        <source>Screenshot history</source>
+        <translation>Cronologia degli screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="219"/>
+        <source>Capture screen</source>
+        <translation>Cattura schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="233"/>
+        <source>Show color picker</source>
+        <translation>Mostra selettore colore</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="234"/>
+        <source>Change the tool&apos;s size</source>
+        <translation>Modifica le dimensioni dello strumento</translation>
+    </message>
+    <message>
+        <source>Change the tool&apos;s thickness</source>
+        <translation type="vanished">Cambia lo spessore dello strumento</translation>
+    </message>
+</context>
+<context>
+    <name>RectangleTool</name>
+    <message>
+        <location filename="../../src/tools/rectangle/rectangletool.cpp" line="23"/>
+        <source>Rectangle</source>
+        <translation>Rettangolo</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/rectangle/rectangletool.cpp" line="33"/>
+        <source>Set the Rectangle as the paint tool</source>
+        <translation>Imposta il rettangolo come strumento di disegno</translation>
+    </message>
+</context>
+<context>
+    <name>RedoTool</name>
+    <message>
+        <location filename="../../src/tools/redo/redotool.cpp" line="24"/>
+        <source>Redo</source>
+        <translation>Rifai</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/redo/redotool.cpp" line="34"/>
+        <source>Redo the next modification</source>
+        <translation>Rifai la modifica successiva</translation>
+    </message>
+</context>
+<context>
+    <name>SaveTool</name>
+    <message>
+        <location filename="../../src/tools/save/savetool.cpp" line="24"/>
+        <source>Save</source>
+        <translation>Salva</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/save/savetool.cpp" line="34"/>
+        <source>Save screenshot to a file</source>
+        <translation>Salva lo screenshot in un file</translation>
+    </message>
+    <message>
+        <source>Save the capture</source>
+        <translation type="vanished">Salva la cattura</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenGrabber</name>
+    <message>
+        <source>Unable to detect desktop environment (GNOME? KDE? Sway? ...)</source>
+        <translation type="vanished">Impossibile rilevare l&apos;ambiente desktop (GNOME? KDE? Sway? ...)</translation>
+    </message>
+    <message>
+        <source>The universal wayland screen capture adapter requires Grim as the screen capture component of wayland. If the screen capture component is missing, please install it!</source>
+        <translation type="vanished">L&apos;adattatore universale per la cattura dello schermo Wayland richiede Grim come componente di cattura dello schermo di Wayland. Se il componente di cattura dello schermo è mancante, installalo!</translation>
+    </message>
+    <message>
+        <source>If the useGrimAdapter setting is not enabled, the dbus protocol will be used. It should be noted that using the dbus protocol under wayland is not recommended. It is recommended to enable the useGrimAdapter setting in snipsnap.ini to activate the grim-based general wayland screenshot adapter</source>
+        <translation type="vanished">Se l&apos;impostazione useGrimAdapter non è abilitata, verrà utilizzato il protocollo dbus. Si prega di notare che l&apos;utilizzo del protocollo dbus in Wayland non è raccomandato. Si consiglia di abilitare l&apos;impostazione useGrimAdapter in snipsnap.ini per attivare l&apos;adattatore generico per screenshot Wayland basato su Grim</translation>
+    </message>
+    <message>
+        <source>grim&apos;s screenshot component is implemented based on wlroots, it may not be used in GNOME or similar desktop environments</source>
+        <translation type="vanished">Il componente screenshot di grim è implementato in base a wlroots, non può essere utilizzato in GNOME o ambienti desktop simili</translation>
+    </message>
+    <message>
+        <source>Unable to detect desktop environment (GNOME? KDE? Qile? Sway? ...)</source>
+        <translation type="vanished">Impossibile rilevare l&apos;ambiente desktop (GNOME? KDE? Qile? Sway? ...)</translation>
+    </message>
+    <message>
+        <source>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</source>
+        <translation type="vanished">Suggerimento: prova a impostare la variabile di ambiente XDG_CURRENT_DESKTOP.</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="61"/>
+        <source>Could not locate the `org.freedesktop.portal.Desktop` service</source>
+        <translation>Impossibile individuare il servizio `org.freedesktop.portal.Desktop`</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="109"/>
+        <source>Screenshot portal timed out after 30 seconds</source>
+        <translation>Il portale per gli screenshot è scaduto dopo 30 secondi</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="132"/>
+        <source>FreeDesktop portal screenshot size: %1x%2, DPR: %3</source>
+        <translation>Dimensioni screenshot del portale FreeDesktop: %1x%2, DPR: %3</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="159"/>
+        <source>Capture Active Monitor is not supported on Wayland due to Wayland security model.</source>
+        <translation>La funzionalità Capture Active Monitor non è supportata su Wayland a causa del modello di sicurezza di Wayland.</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="177"/>
+        <source>Screenshot already in progress, please wait for the current screenshot to complete</source>
+        <translation>Acquisizione dello screenshot in corso, attendere il completamento dell&apos;acquisizione corrente</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="202"/>
+        <source>Screenshot cancelled</source>
+        <translation>Screenshot annullato</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="218"/>
+        <source>Unable to get current screen</source>
+        <translation>Impossibile ottenere la schermata corrente</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="237"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="243"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="299"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="304"/>
+        <source>Unable to capture screen</source>
+        <translation>Impossibile acquisire lo schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="373"/>
+        <source>=== All Screen Information ===</source>
+        <translation>=== Tutte le informazioni sullo schermo ===</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="376"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="551"/>
+        <source>Screen %1: %2</source>
+        <translation>Schermo %1: %2</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="377"/>
+        <source>  Logical geometry: %1x%2+%3+%4</source>
+        <translation>  Geometria logica: %1x%2+%3+%4</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="382"/>
+        <source>  DPR: %1</source>
+        <translation>  DPR: %1</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="488"/>
+        <source>Total logical dimensions: %1x%2 (min: %3,%4)</source>
+        <translation>Dimensioni logiche totali: %1x%2 (min: %3,%4)</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="493"/>
+        <source>Screenshot dimensions: %1x%2</source>
+        <translation>Dimensioni dello screenshot: %1x%2</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="509"/>
+        <source>Screenshot scale factors: X=%1 Y=%2</source>
+        <translation>Fattori di scala dello screenshot: X=%1 Y=%2</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="542"/>
+        <source>Calculated crop position for mixed DPI: X=%1 Y=%2</source>
+        <translation>Posizione di ritaglio calcolata per DPI misto: X=%1 Y=%2</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="552"/>
+        <source>  Logical geometry: %1x%2+%3+%4 DPR: %5</source>
+        <translation>  Geometria logica: %1x%2+%3+%4 DPR: %5</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="558"/>
+        <source>  Crop rect in screenshot: %1x%2+%3+%4</source>
+        <translation>  Ritaglia il rettangolo nello screenshot: %1x%2+%3+%4</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="571"/>
+        <source>Crop rect is empty, returning full screenshot</source>
+        <translation>Il riquadro di ritaglio è vuoto, viene restituita la schermata completa</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/screengrabber.cpp" line="587"/>
+        <source>Scaling screenshot to: %1 %2</source>
+        <translation>Ridimensionamento dello screenshot a: %1 %2</translation>
+    </message>
+</context>
+<context>
+    <name>SecondaryInstanceWidget</name>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/secondaryinstancewidget.cpp" line="26"/>
+        <source>Secondary instance</source>
+        <translation>Istanza secondaria</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/secondaryinstancewidget.cpp" line="27"/>
+        <source>&lt;b&gt;Secondary instance.&lt;/b&gt; Send message to primary:</source>
+        <translation>&lt;b&gt;Istanza secondaria.&lt;/b&gt; Invia messaggio a primaria:</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/secondaryinstancewidget.cpp" line="29"/>
+        <source>Type something here...</source>
+        <translation>Scrivi qualcosa qui...</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/secondaryinstancewidget.cpp" line="31"/>
+        <source>&amp;Send</source>
+        <translation>&amp;Invia</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/secondaryinstancewidget.cpp" line="54"/>
+        <source>Error sending message</source>
+        <translation>Errore durante l&apos;invio del messaggio</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/kdsingleapplication-src/examples/widgetsingleapplication/secondaryinstancewidget.cpp" line="55"/>
+        <source>The message &apos;%1&apos; could not be sent to the primary.</source>
+        <translation>Impossibile inviare il messaggio &apos;%1&apos; al server primario.</translation>
+    </message>
+</context>
+<context>
+    <name>SelectionTool</name>
+    <message>
+        <location filename="../../src/tools/selection/selectiontool.cpp" line="26"/>
+        <source>Rectangular Selection</source>
+        <translation>Selezione rettangolare</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/selection/selectiontool.cpp" line="36"/>
+        <source>Set Selection as the paint tool</source>
+        <translation>Imposta Selezione come strumento di disegno</translation>
+    </message>
+</context>
+<context>
+    <name>SetShortcutDialog</name>
+    <message>
+        <location filename="../../src/config/setshortcutwidget.cpp" line="20"/>
+        <source>Set Shortcut</source>
+        <translation>Imposta Scorciatoia</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/setshortcutwidget.cpp" line="26"/>
+        <source>Enter new shortcut to change </source>
+        <translation>Inserisci una nuova scorciatoia da cambiare </translation>
+    </message>
+    <message>
+        <location filename="../../src/config/setshortcutwidget.cpp" line="40"/>
+        <source>Press Esc to cancel or ⌘+Backspace to disable the keyboard shortcut.</source>
+        <translation>Premere Esc per annullare o ⌘+Backspace per disabilitare la scorciatoia da tastiera.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/setshortcutwidget.cpp" line="44"/>
+        <source>Press Esc to cancel or Backspace to disable the keyboard shortcut.</source>
+        <translation>Premi Esc per annullare o Backspace per disabilitare la scorciatoia da tastiera.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
+        <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
+        <source>SnipSnap must be restarted for changes to take effect.</source>
+        <translation>SnipSnap deve essere riavviato per rendere effettive le modifiche.</translation>
+    </message>
+</context>
+<context>
+    <name>ShortcutsWidget</name>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="31"/>
+        <source>Hot Keys</source>
+        <translation>Tasti di scelta rapida</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="61"/>
+        <source>Available shortcuts in the screen capture mode.</source>
+        <translation>Scorciatoie disponibili nella modalità di cattura dello schermo.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="72"/>
+        <source>Description</source>
+        <translation>Descrizione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="72"/>
+        <source>Key</source>
+        <translation>Tasto</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="175"/>
+        <source>Left Double-click</source>
+        <translation>Doppio clic sinistro</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="182"/>
+        <source>Toggle side panel</source>
+        <translation>Attiva il pannello laterale</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="183"/>
+        <source>Grab a color from the screen</source>
+        <translation>Prendi un colore dallo schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="184"/>
+        <source>Resize selection left 1px</source>
+        <translation>Ridimensiona la selezione sinistra di 1px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="185"/>
+        <source>Resize selection right 1px</source>
+        <translation>Ridimensiona la selezione destra di 1px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="186"/>
+        <source>Resize selection up 1px</source>
+        <translation>Ridimensiona la selezione sopra di 1px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="187"/>
+        <source>Resize selection down 1px</source>
+        <translation>Ridimensiona la selezione giù di 1 px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="189"/>
+        <source>Symmetrically decrease width by 2px</source>
+        <translation>Ridurre simmetricamente la larghezza di 2px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="191"/>
+        <source>Symmetrically increase width by 2px</source>
+        <translation>Aumentare simmetricamente la larghezza di 2px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="193"/>
+        <source>Symmetrically increase height by 2px</source>
+        <translation>Aumentare simmetricamente l&apos;altezza di 2px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="195"/>
+        <source>Symmetrically decrease height by 2px</source>
+        <translation>Ridurre simmetricamente l&apos;altezza di 2px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="196"/>
+        <source>Select entire screen</source>
+        <translation>Seleziona tutto lo schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="197"/>
+        <source>Move selection left 1px</source>
+        <translation>Sposta la selezione a sinistra di 1 px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="198"/>
+        <source>Move selection right 1px</source>
+        <translation>Sposta la selezione a destra di 1 px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="199"/>
+        <source>Move selection up 1px</source>
+        <translation>Sposta la selezione sopra di 1 px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="200"/>
+        <source>Move selection down 1px</source>
+        <translation>Sposta la selezione giù di 1 px</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="201"/>
+        <source>Commit text in text area</source>
+        <translation>Conferma testo nell&apos;area testo</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="203"/>
+        <source>Delete selected drawn object</source>
+        <translation>Elimina l&apos;oggetto disegnato selezionato</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="204"/>
+        <source>Cancel current selection</source>
+        <translation>Annulla la selezione corrente</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that SnipSnap can use the &apos;Print Screen&apos; key?</source>
+        <translation>Sembra che Windows forzi l&apos;apertura del suo strumento di acquisizione schermata quando si preme il tasto &quot;Stamp&quot;. Desideri disabilitare questa funzione in modo che SnipSnap possa utilizzare il tasto &quot;Stamp&quot;?</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
+        <source>SnipSnap must be restarted for changes to take effect.</source>
+        <translation>SnipSnap deve essere riavviato affinché le modifiche abbiano effetto.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="278"/>
+        <source>No, don&apos;t ask again</source>
+        <translation>No, non chiedere di nuovo</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="286"/>
+        <location filename="../../src/config/shortcutswidget.cpp" line="333"/>
+        <location filename="../../src/config/shortcutswidget.cpp" line="343"/>
+        <source>The registry could not be changed!</source>
+        <translation>Impossibile modificare il registro!</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
+        <source>Register SnipSnap as MS-SCREENCLIP application (administrator privileges required)</source>
+        <translation>Registra SnipSnap come applicazione MS-SCREENCLIP (sono necessari i privilegi di amministratore)</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
+        <source>After registering, you can select SnipSnap as the default screenshot application in Windows Settings.</source>
+        <translation>Dopo la registrazione, è possibile selezionare SnipSnap come applicazione predefinita per gli screenshot nelle Impostazioni di Windows.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
+        <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
+        <source>You may start SnipSnap as administrator ONCE and try again!</source>
+        <translation>Puoi avviare SnipSnap come amministratore UNA SOLA VOLTA e riprovare!</translation>
+    </message>
+    <message>
+        <source>Delete current tool</source>
+        <translation type="vanished">Elimina lo strumento corrente</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="213"/>
+        <location filename="../../src/config/shortcutswidget.cpp" line="222"/>
+        <source>Capture screen</source>
+        <translation>Cattura schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/shortcutswidget.cpp" line="215"/>
+        <source>Screenshot history</source>
+        <translation>Cronologia degli screenshot</translation>
+    </message>
+</context>
+<context>
+    <name>SidePanelWidget</name>
+    <message>
+        <source>Active thickness:</source>
+        <translation type="vanished">Spessore attivo:</translation>
+    </message>
+    <message>
+        <source>Active color:</source>
+        <translation type="vanished">Colore attivo:</translation>
+    </message>
+    <message>
+        <source>Press ESC to cancel</source>
+        <translation type="vanished">Premere ESC per annullare</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/sidepanelwidget.cpp" line="37"/>
+        <source>Active tool size: </source>
+        <translation>Dimensione strumento attivo: </translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/sidepanelwidget.cpp" line="57"/>
+        <source>Active Color: </source>
+        <translation>Active Color: </translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/sidepanelwidget.cpp" line="78"/>
+        <source>Grab Color</source>
+        <translation>Prendi il colore</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/sidepanelwidget.cpp" line="85"/>
+        <source>Display grid</source>
+        <translation>Griglia di visualizzazione</translation>
+    </message>
+</context>
+<context>
+    <name>SizeDecreaseTool</name>
+    <message>
+        <location filename="../../src/tools/sizedecrease/sizedecreasetool.cpp" line="38"/>
+        <source>Decrease Tool Size</source>
+        <translation>Diminuisci le Dimensioni dello Strumento</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/sizedecrease/sizedecreasetool.cpp" line="48"/>
+        <source>Decrease the size of the other tools</source>
+        <translation>Diminuisci le dimensioni degli altri strumenti</translation>
+    </message>
+</context>
+<context>
+    <name>SizeIncreaseTool</name>
+    <message>
+        <location filename="../../src/tools/sizeincrease/sizeincreasetool.cpp" line="38"/>
+        <source>Increase Tool Size</source>
+        <translation>Aumenta la dimensione dello strumento</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/sizeincrease/sizeincreasetool.cpp" line="48"/>
+        <source>Increase the size of the other tools</source>
+        <translation>Aumenta le dimensioni degli altri strumenti</translation>
+    </message>
+</context>
+<context>
+    <name>SizeIndicatorTool</name>
+    <message>
+        <source>Selection Size Indicator</source>
+        <translation type="vanished">Indicatore della dimensione della selezione</translation>
+    </message>
+    <message>
+        <source>Show X and Y dimensions of the selection</source>
+        <translation type="vanished">Mostra le dimensioni X e Y della selezione</translation>
+    </message>
+    <message>
+        <source>Show the dimensions of the selection (X Y)</source>
+        <translation type="vanished">Mostra le dimensioni della selezione (X Y)</translation>
+    </message>
+</context>
+<context>
+    <name>StrftimeChooserWidget</name>
+    <message>
+        <source>Century (00-99)</source>
+        <translation type="vanished">Secolo (00-99)</translation>
+    </message>
+    <message>
+        <source>Year (00-99)</source>
+        <translation type="vanished">Anno (00-99)</translation>
+    </message>
+    <message>
+        <source>Year (2000)</source>
+        <translation type="vanished">Anno (2000)</translation>
+    </message>
+    <message>
+        <source>Month Name (jan)</source>
+        <translation type="vanished">Nome mese (gennaio)</translation>
+    </message>
+    <message>
+        <source>Month Name (january)</source>
+        <translation type="vanished">Nome Mese (gennaio)</translation>
+    </message>
+    <message>
+        <source>Month (01-12)</source>
+        <translation type="vanished">Mese (01-12)</translation>
+    </message>
+    <message>
+        <source>Week Day (1-7)</source>
+        <translation type="vanished">Giorno della settimana (1-7)</translation>
+    </message>
+    <message>
+        <source>Week (01-53)</source>
+        <translation type="vanished">Settimana (01-53)</translation>
+    </message>
+    <message>
+        <source>Day Name (mon)</source>
+        <translation type="vanished">Nome Giorno (lunedì)</translation>
+    </message>
+    <message>
+        <source>Day Name (monday)</source>
+        <translation type="vanished">Nome Giorno (lunedì)</translation>
+    </message>
+    <message>
+        <source>Day (01-31)</source>
+        <translation type="vanished">Giorno (01-31)</translation>
+    </message>
+    <message>
+        <source>Day of Month (1-31)</source>
+        <translation type="vanished">Giorno del Mese (1-31)</translation>
+    </message>
+    <message>
+        <source>Day (001-366)</source>
+        <translation type="vanished">Giorno (001-366)</translation>
+    </message>
+    <message>
+        <source>Time (%H-%M-%S)</source>
+        <translation type="vanished">Tempo (%H-%M-%S)</translation>
+    </message>
+    <message>
+        <source>Time (%H-%M)</source>
+        <translation type="vanished">Tempo (%H-%M)</translation>
+    </message>
+    <message>
+        <source>Hour (00-23)</source>
+        <translation type="vanished">Ora (00-23)</translation>
+    </message>
+    <message>
+        <source>Hour (01-12)</source>
+        <translation type="vanished">Ora (01-12)</translation>
+    </message>
+    <message>
+        <source>Minute (00-59)</source>
+        <translation type="vanished">Minuto (00-59)</translation>
+    </message>
+    <message>
+        <source>Second (00-59)</source>
+        <translation type="vanished">Secondo (00-59)</translation>
+    </message>
+    <message>
+        <source>Full Date (%m/%d/%y)</source>
+        <translation type="vanished">Data completa (%m/%d/%y)</translation>
+    </message>
+    <message>
+        <source>Full Date (%Y-%m-%d)</source>
+        <translation type="vanished">Data completa (%Y-%m-%d)</translation>
+    </message>
+    <message>
+        <source>Full Date (%d-%m-%Y)</source>
+        <translation type="vanished">Data completa (%g-%m-%A)</translation>
+    </message>
+</context>
+<context>
+    <name>SystemNotification</name>
+    <message>
+        <location filename="../../src/utils/systemnotification.cpp" line="43"/>
+        <source>No DBus System Notification service found</source>
+        <translation>Nessun servizio di notifica di sistema DBus trovato</translation>
+    </message>
+    <message>
+        <location filename="../../src/utils/systemnotification.cpp" line="51"/>
+        <source>SnipSnap Info</source>
+        <translation>Informazioni su SnipSnap</translation>
+    </message>
+</context>
+<context>
+    <name>TextConfig</name>
+    <message>
+        <location filename="../../src/tools/text/textconfig.cpp" line="45"/>
+        <source>StrikeOut</source>
+        <translation>Cancella</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/text/textconfig.cpp" line="54"/>
+        <source>Underline</source>
+        <translation>Sottolineare</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/text/textconfig.cpp" line="63"/>
+        <source>Bold</source>
+        <translation>Grassetto</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/text/textconfig.cpp" line="72"/>
+        <source>Italic</source>
+        <translation>Corsivo</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/text/textconfig.cpp" line="82"/>
+        <source>Left Align</source>
+        <translation>Allinea a sinistra</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/text/textconfig.cpp" line="91"/>
+        <source>Center Align</source>
+        <translation>Allinea al centro</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/text/textconfig.cpp" line="100"/>
+        <source>Right Align</source>
+        <translation>Allinea a destra</translation>
+    </message>
+</context>
+<context>
+    <name>TextTool</name>
+    <message>
+        <location filename="../../src/tools/text/texttool.cpp" line="73"/>
+        <source>Text</source>
+        <translation>Testo</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/text/texttool.cpp" line="97"/>
+        <source>Add text to your capture</source>
+        <translation>Aggiungi testo alla tua cattura</translation>
+    </message>
+</context>
+<context>
+    <name>TrayIcon</name>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="112"/>
+        <source>&amp;Take Screenshot</source>
+        <translation>&amp;Acquisisci screenshot</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="133"/>
+        <source>&amp;Open Launcher</source>
+        <translation>&amp;Apri Launcher</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="138"/>
+        <source>&amp;Configuration</source>
+        <translation>&amp;Configurazione</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="143"/>
+        <source>&amp;About</source>
+        <translation>&amp;Informazioni</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="150"/>
+        <location filename="../../src/widgets/trayicon.cpp" line="237"/>
+        <source>Check for updates</source>
+        <translation>Verifica la disponibilità di aggiornamenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="162"/>
+        <source>Download version %1</source>
+        <translation>Scarica la versione %1</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="250"/>
+        <source>Select Screen</source>
+        <translation>Seleziona schermo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="266"/>
+        <source>Monitor %1: %2 (%3x%4)</source>
+        <translation>Monitor %1: %2 (%3x%4)</translation>
+    </message>
+    <message>
+        <source>New version %1 is available</source>
+        <translation type="vanished">È disponibile la nuova versione %1</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="176"/>
+        <source>&amp;Quit</source>
+        <translation>&amp;Esci</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="181"/>
+        <source>&amp;Latest Uploads</source>
+        <translation>&amp;Ultimi caricamenti</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/trayicon.cpp" line="187"/>
+        <source>&amp;Open Save Path</source>
+        <translation>&amp;Apri percorso di salvataggio</translation>
+    </message>
+</context>
+<context>
+    <name>UIcolorEditor</name>
+    <message>
+        <source>UI Color Editor</source>
+        <translation type="vanished">Editor dei colori dell&apos;interfaccia utente</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/uicoloreditor.cpp" line="89"/>
+        <source>Change the color moving the selectors and see the changes in the preview buttons.</source>
+        <translation>Cambia il colore spostando i selettori e guarda le modifiche nei pulsanti di anteprima.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/uicoloreditor.cpp" line="100"/>
+        <source>Select a Button to modify it</source>
+        <translation>Seleziona un pulsante per modificarlo</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/uicoloreditor.cpp" line="110"/>
+        <source>Main Color</source>
+        <translation>Colore Principale</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/uicoloreditor.cpp" line="114"/>
+        <source>Click on this button to set the edition mode of the main color.</source>
+        <translation>Fare clic su questo pulsante per impostare la modalità di modifica del colore principale.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/uicoloreditor.cpp" line="125"/>
+        <source>Contrast Color</source>
+        <translation>Colore di Contrasto</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/uicoloreditor.cpp" line="130"/>
+        <source>Click on this button to set the edition mode of the contrast color.</source>
+        <translation>Fare clic su questo pulsante per impostare la modalità di modifica del colore di contrasto.</translation>
+    </message>
+</context>
+<context>
+    <name>UndoTool</name>
+    <message>
+        <location filename="../../src/tools/undo/undotool.cpp" line="24"/>
+        <source>Undo</source>
+        <translation>Annulla</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/undo/undotool.cpp" line="34"/>
+        <source>Undo the last modification</source>
+        <translation>Annulla l&apos;ultima modifica</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateNotificationWidget</name>
+    <message>
+        <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
+        <source>New SnipSnap version %1 is available</source>
+        <translation>È disponibile la nuova versione di SnipSnap %1</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/updatenotificationwidget.cpp" line="129"/>
+        <source>Ignore</source>
+        <translation>Ignora</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/updatenotificationwidget.cpp" line="137"/>
+        <source>Later</source>
+        <translation>Dopo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/updatenotificationwidget.cpp" line="145"/>
+        <source>Update</source>
+        <translation>Aggiorna</translation>
+    </message>
+</context>
+<context>
+    <name>UploadHistory</name>
+    <message>
+        <location filename="../../src/widgets/uploadhistory.ui" line="14"/>
+        <source>Upload History</source>
+        <translation>Carica cronologia</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/uploadhistory.cpp" line="60"/>
+        <source>Screenshots history is empty</source>
+        <translation>La cronologia degli screenshot è vuota</translation>
+    </message>
+</context>
+<context>
+    <name>UploadLineItem</name>
+    <message>
+        <location filename="../../src/widgets/uploadlineitem.ui" line="20"/>
+        <source>Form</source>
+        <translation>Modulo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/uploadlineitem.ui" line="49"/>
+        <source>TextLabel</source>
+        <translation>Etichetta di testo</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/uploadlineitem.ui" line="82"/>
+        <source>Copy URL</source>
+        <translation>Copia URL</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/uploadlineitem.ui" line="95"/>
+        <source>Open In Browser</source>
+        <translation>Apri nel browser</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/uploadlineitem.cpp" line="50"/>
+        <source>Confirm to delete</source>
+        <translation>Conferma per eliminare</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/uploadlineitem.cpp" line="51"/>
+        <source>Are you sure you want to delete a screenshot from the latest uploads and server?</source>
+        <translation>Sei sicuro di voler eliminare uno screenshot dagli ultimi caricamenti e dal server?</translation>
+    </message>
+</context>
+<context>
+    <name>UtilityPanel</name>
+    <message>
+        <location filename="../../src/widgets/panel/utilitypanel.cpp" line="197"/>
+        <source>Close</source>
+        <translation>Chiudi</translation>
+    </message>
+    <message>
+        <location filename="../../src/widgets/panel/utilitypanel.cpp" line="207"/>
+        <source>&lt;Empty&gt;</source>
+        <translation>&lt;Vuoto&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>VisualsEditor</name>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="44"/>
+        <source>Opacity of area outside selection:</source>
+        <translation>Opacità dell&apos;area al di fuori della selezione:</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="73"/>
+        <source>UI Color Editor</source>
+        <translation>Editor del colore dell&apos;interfaccia</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="79"/>
+        <source>Colorpicker Editor</source>
+        <translation>Editor per la selezione dei colori</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="84"/>
+        <source>Button Selection</source>
+        <translation>Selezione dei Pulsanti</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="90"/>
+        <source>Select All</source>
+        <translation>Seleziona Tutto</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="101"/>
+        <source>UI language</source>
+        <translation>Lingua interfaccia utente</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="141"/>
+        <source>Configuration</source>
+        <translation>Configurazione</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/visualseditor.cpp" line="142"/>
+        <source>SnipSnap must be restarted to apply these changes!</source>
+        <translation>SnipSnap deve essere riavviato per applicare queste modifiche!</translation>
+    </message>
+</context>
+<context>
+    <name>color_widgets::ColorDialog</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_dialog.cpp" line="63"/>
+        <source>Pick</source>
+        <translation>Scegli</translation>
+    </message>
+</context>
+<context>
+    <name>color_widgets::ColorPalette</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette.cpp" line="422"/>
+        <source>Unnamed</source>
+        <translation>Senza nome</translation>
+    </message>
+</context>
+<context>
+    <name>color_widgets::ColorPaletteModel</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_model.cpp" line="55"/>
+        <source>Unnamed</source>
+        <translation>Senza nome</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_model.cpp" line="130"/>
+        <source>%1 (%2 colors)</source>
+        <translation>%1 (%2 colori)</translation>
+    </message>
+</context>
+<context>
+    <name>color_widgets::ColorPaletteWidget</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="64"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="231"/>
+        <source>Open a new palette from file</source>
+        <translation>Apri una nuova tavolozza da file</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="75"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="234"/>
+        <source>Create a new palette</source>
+        <translation>Crea una nuova tavolozza</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="86"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="237"/>
+        <source>Duplicate the current palette</source>
+        <translation>Duplica la tavolozza corrente</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="170"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="240"/>
+        <source>Delete the current palette</source>
+        <translation>Elimina la tavolozza corrente</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="181"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="243"/>
+        <source>Revert changes to the current palette</source>
+        <translation>Ripristina le modifiche alla tavolozza corrente</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="192"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="246"/>
+        <source>Save changes to the current palette</source>
+        <translation>Salva le modifiche alla tavolozza corrente</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="216"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="249"/>
+        <source>Add a color to the palette</source>
+        <translation>Aggiungi un colore alla tavolozza</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.ui" line="227"/>
+        <location filename="../../build/_deps/qtcolorwidgets-build/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="252"/>
+        <source>Remove the selected color from the palette</source>
+        <translation>Rimuovere il colore selezionato dalla tavolozza</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="181"/>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="196"/>
+        <source>New Palette</source>
+        <translation>Nuova tavolozza</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="182"/>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="197"/>
+        <source>Name</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="223"/>
+        <source>GIMP Palettes (*.gpl)</source>
+        <translation>Tavolozze GIMP (*.gpl)</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="224"/>
+        <source>Palette Image (%1)</source>
+        <translation>Immagine tavolozza (%1)</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="225"/>
+        <source>All Files (*)</source>
+        <translation>Tutti i files (*)</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="226"/>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="239"/>
+        <source>Open Palette</source>
+        <translation>Apri tavolozza</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/color_palette_widget.cpp" line="240"/>
+        <source>Failed to load the palette file
+%1</source>
+        <translation>Impossibile caricare il file della tavolozza
+%1</translation>
+    </message>
+</context>
+<context>
+    <name>color_widgets::GradientEditor</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/gradient_editor.cpp" line="321"/>
+        <source>Add Color</source>
+        <translation>Add Color</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/gradient_editor.cpp" line="330"/>
+        <source>Remove Color</source>
+        <translation>Rimuovi colore</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/gradient_editor.cpp" line="338"/>
+        <source>Edit Color...</source>
+        <translation>Modifica colore...</translation>
+    </message>
+</context>
+<context>
+    <name>color_widgets::GradientListModel</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/gradient_list_model.cpp" line="215"/>
+        <source>%1 (%2 colors)</source>
+        <translation>%1 (%2 colori)</translation>
+    </message>
+</context>
+<context>
+    <name>color_widgets::Swatch</name>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/swatch.cpp" line="855"/>
+        <source>Clear Color</source>
+        <translation>Colore chiaro</translation>
+    </message>
+    <message>
+        <location filename="../../build/_deps/qtcolorwidgets-src/src/QtColorWidgets/swatch.cpp" line="864"/>
+        <source>%1 (%2)</source>
+        <translation>%1 (%2)</translation>
+    </message>
+</context>
+</TS>

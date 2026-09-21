@@ -1,0 +1,36 @@
+{
+  "format-version": 1,
+  "uuid": "snipsnap-shell-bridge@kleos.norvi.tech",
+  "source-directory": "snipsnap-shell-bridge",
+  "install-directory": "$XDG_DATA_HOME/gnome-shell/extensions/snipsnap-shell-bridge@kleos.norvi.tech",
+  "files": [
+    "accent-color.js",
+    "capture-lifecycle.js",
+    "capture-topology.js",
+    "extension.js",
+    "geometry.js",
+    "handoff-client.js",
+    "handoff-protocol.js",
+    "handoff-state.js",
+    "metadata.json",
+    "schemas/org.gnome.shell.extensions.flameshot-shell-bridge.gschema.xml",
+    "selected-region.js",
+    "stylesheet.css"
+  ],
+  "generated-files": [
+    "schemas/gschemas.compiled"
+  ],
+  "default-keybinding": [
+    "<Super><Shift>s"
+  ],
+  "managed-desktop-keybinding": [
+    "Print"
+  ],
+  "managed-desktop-conflicts": [
+    {
+      "schema": "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding",
+      "path": "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/snipsnap/",
+      "current-command": "snipsnap gui"
+    }
+  ]
+}

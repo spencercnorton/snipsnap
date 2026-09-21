@@ -1,0 +1,40 @@
+SnipSnap
+========
+
+SnipSnap is derived from the Flameshot screenshot tool:
+
+  Project: https://github.com/flameshot-org/flameshot
+  Baseline commit: bd2e6d3a0ee665470bd05f614f5087a36c076cfc
+  (upstream master, 2026-07-11)
+
+Almost everything here is upstream's work. The upstream authors and the
+licences of every file are recorded in packaging/debian/copyright, which is
+the authoritative list, and in the public source history of Flameshot.
+Flameshot is distributed under the GNU General Public License, version 3 or
+any later version; SnipSnap keeps that licence. The complete licence text is
+in LICENSE.
+
+The compositor-side capture path added by SnipSnap — the GNOME Shell bridge
+extension, its packaging, the daemon's receiver, the capture trace and the
+region editor — and every other SnipSnap-specific change are copyright 2026
+Spencer Norton and distributed under the same GNU General Public License,
+version 3 or any later version.
+
+The SnipSnap aperture-and-crop application icon, in every raster, monochrome
+and symbolic tray variant shipped here, is original
+artwork created for this project (copyright 2026 NorviTech, GPL-3.0-or-later;
+see data/img/app/LogoLicense.txt). The initial visual concept was generated
+with OpenAI image generation and then redrawn as project-native SVG artwork.
+
+The editor's tool icons under data/img/material/ are Google Material Design
+Icons, copyright Google Inc., distributed under the Apache License, Version
+2.0. The licence text is in data/img/material/LICENSE.txt.
+
+The build fetches two libraries at configure time rather than vendoring them:
+KDSingleApplication, copyright Klarälvdalens Datakonsult AB, under the MIT
+(Expat) licence; and Qt-Color-Widgets, copyright Mattia Basaglia, under the
+GNU Lesser General Public License, version 3 or any later version, with its
+linking exception. Both are pinned to immutable revisions in CMakeLists.txt.
+
+The names Flameshot, SnipSnap, GNOME, Qt, Ubuntu, Debian and satty belong to
+their respective owners. Their mention does not imply endorsement.

@@ -1,0 +1,50 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-FileCopyrightText: 2017-2019 Alejandro Sirgo Rica & Contributors
+
+#include "globalshortcutfilter.h"
+#include "core/snipsnap.h"
+
+#include <qt_windows.h>
+
+GlobalShortcutFilter::GlobalShortcutFilter(QObject* parent)
+  : QObject(parent)
+{
+    // Forced Print Screen
+    if (RegisterHotKey(NULL, 1, 0, VK_SNAPSHOT)) {
+        // ok - capture screen
+    }
+
+    if (RegisterHotKey(NULL, 2, MOD_SHIFT, VK_SNAPSHOT)) {
+        // ok - show screenshots history
+    }
+}
+
+bool GlobalShortcutFilter::nativeEventFilter(const QByteArray& eventType,
+                                             void* message,
+                                             qintptr* result)
+{
+    Q_UNUSED(eventType)
+    Q_UNUSED(result)
+
+    MSG* msg = static_cast<MSG*>(message);
+    if (msg->message == WM_HOTKEY) {
+        // TODO: this is just a temporary workaround; proper global
+        // support would need custom shortcuts defined by the user.
+        const quint32 keycode = HIWORD(msg->lParam);
+        const quint32 modifiers = LOWORD(msg->lParam);
+#ifdef ENABLE_IMGUR
+        // Show screenshots history
+        if (VK_SNAPSHOT == keycode && MOD_SHIFT == modifiers) {
+            SnipSnap::instance()->history();
+            return true;
+        }
+#endif
+        // Capture screen
+        if (VK_SNAPSHOT == keycode && 0 == modifiers) {
+            SnipSnap::instance()->requestCapture(
+              CaptureRequest(CaptureRequest::GRAPHICAL_MODE));
+            return true;
+        }
+    }
+    return false; // Forward event to Qt
+}

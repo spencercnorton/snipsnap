@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- SPDX-FileCopyrightText: 2026 NorviTech -->
+<!-- Monochrome 16px aperture-and-crop mark for symbolic desktop panels. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.25" d="M1.5 5V3a1.5 1.5 0 0 1 1.5-1.5h2M11 1.5h2A1.5 1.5 0 0 1 14.5 3v2M14.5 11v2a1.5 1.5 0 0 1-1.5 1.5h-2M5 14.5H3A1.5 1.5 0 0 1 1.5 13v-2"/>
+    <circle cx="8" cy="8" r="4.25" stroke-width="1.1"/>
+    <path stroke-width="1" d="M8 3.75l.9 2.72L9.75 8l-.85 1.53L8 12.25M11.68 5.88L9.75 8M11.68 10.13L8.9 9.53M4.32 10.13l2.78-.6M4.32 5.88L6.25 8M7.1 6.47h1.8L9.75 8 8.9 9.53H7.1L6.25 8z"/>
+  </g>
+</svg>

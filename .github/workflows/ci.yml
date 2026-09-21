@@ -1,0 +1,65 @@
+# Build and test SnipSnap on every pull request and on main. No secrets,
+# read-only token, GitHub-owned actions pinned by commit, GitHub-hosted runners.
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  build:
+    # Ubuntu 24.04 ships Qt 6.4.2, above the 6.2 floor packaging/debian/control sets.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      DEBIAN_FRONTEND: noninteractive
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -q -y --no-install-recommends \
+            cmake ninja-build dbus-daemon libgl-dev python3 \
+            qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-svg-dev qt6-l10n-tools
+      # Qt-Color-Widgets and KDSingleApplication are fetched by CMake at pinned commits.
+      - name: Configure
+        run: |
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+            -DBUILD_TESTING=ON \
+            -DDISABLE_UPDATE_CHECKER=ON \
+            -DENABLE_IMGUR=OFF \
+            -DENABLE_GNOME_SHELL_BRIDGE=ON \
+            -DSNIPSNAP_WARNINGS_AS_ERRORS=ON
+      - name: Build
+        run: cmake --build build --parallel 4
+      - name: Test
+        run: ctest --test-dir build --output-on-failure --no-tests=error
+
+  python-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      # gjs_shell_bridge_handoff_test.py imports gi at module level; the GObject
+      # bindings only exist for the system python3, which is what runs pytest.
+      - run: sudo apt-get update -q && sudo apt-get install -q -y --no-install-recommends python3-gi
+      - run: pip install -q pytest pillow
+      # Tree-level tests; the ones that need a GNOME session or a built binary skip.
+      - run: python3 -m pytest -q -p no:cacheprovider tests/*_test.py
+
+  extension-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      # node:test only; the runner image ships Node (22 at the time of writing), so no setup-node.
+      - run: node --test tests/*.test.mjs
+        working-directory: contrib/gnome-shell-extension

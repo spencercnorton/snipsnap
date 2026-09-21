@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in SnipSnap does not behave as documented.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please remove anything private from logs before pasting them: usernames in paths, hostnames, window titles. Never attach a screenshot of your real desktop — a capture of a blank workspace or a test window shows the bug just as well.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead.
+      placeholder: Pressed Print with two monitors, expected the overlay on both, got it on one and the selection stopped at the seam.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. `snipsnap-shell-bridge activate` (apt package) or `./build/src/snipsnap gui` (source build)
+        2. …
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How SnipSnap was installed
+      options: ["apt package (apt.globalentry.systems)", "Built from source", "Other (say what under What happened)"]
+    validations:
+      required: true
+  - type: dropdown
+    id: session
+    attributes:
+      label: Desktop session
+      description: Most capture bugs exist on only one of these. "GNOME Wayland with the bridge" means the SnipSnap Shell Bridge extension is enabled (`gnome-extensions list --enabled | grep snipsnap`); without it, GNOME Wayland falls back to the desktop portal.
+      options: ["GNOME Wayland with the bridge", "GNOME Wayland, portal fallback (bridge not enabled)", "Other Wayland (KDE, Sway, Hyprland, …)", "X11"]
+    validations:
+      required: true
+  - type: input
+    id: monitors
+    attributes:
+      label: Monitor layout
+      description: How many monitors, at what resolution and scale each, and whether the bug follows a particular monitor or the seam between two.
+      placeholder: 3 × 3840×2160 at 150 %, side by side
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: "`snipsnap --version` (or `apt policy snipsnap` if it came from the archive), `gnome-shell --version`, and your distro. The bridge supports GNOME Shell 50 and 51."
+      placeholder: snipsnap 2.0.2 · GNOME Shell 50.1 · Ubuntu 26.04
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log excerpt
+      description: The bridge writes a JSON timeline to your user journal — `journalctl --user -b -o cat | grep '\[snipsnap-shell-bridge\]'` — and `SNIPSNAP_CAPTURE_TRACE=stderr snipsnap gui` in a terminal prints the daemon's side of the same capture. Paste the lines around the failure. Both record event names, timings and geometry, never pixels — but read them before pasting and remove anything that identifies you or your machine.
+      render: text

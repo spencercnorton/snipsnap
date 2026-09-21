@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- SPDX-FileCopyrightText: 2026 NorviTech -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="tile" x1="10" y1="6" x2="54" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#353c48"/>
+      <stop offset="0.42" stop-color="#1c222b"/>
+      <stop offset="1" stop-color="#090c11"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="19" y1="17" x2="47" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f2f5f8"/>
+      <stop offset="0.3" stop-color="#929ba7"/>
+      <stop offset="0.58" stop-color="#414956"/>
+      <stop offset="1" stop-color="#d8dde3"/>
+    </linearGradient>
+    <linearGradient id="bladeA" x1="23" y1="16" x2="42" y2="45" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8e98a6"/>
+      <stop offset="0.5" stop-color="#4a525e"/>
+      <stop offset="1" stop-color="#20262f"/>
+    </linearGradient>
+    <linearGradient id="bladeB" x1="22" y1="17" x2="45" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#56606d"/>
+      <stop offset="0.55" stop-color="#252c35"/>
+      <stop offset="1" stop-color="#10151c"/>
+    </linearGradient>
+    <radialGradient id="glass" cx="39%" cy="34%" r="68%">
+      <stop stop-color="#1b405d"/>
+      <stop offset="0.38" stop-color="#09243a"/>
+      <stop offset="0.72" stop-color="#040b15"/>
+      <stop offset="1" stop-color="#010307"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="1.4" stdDeviation="1.6" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <path id="blade" d="M32 13.5a18.5 18.5 0 0 1 16 9.25L36.4 29.4 25 22.8Z"/>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#tile)" filter="url(#shadow)"/>
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="none" stroke="#596270" stroke-opacity="0.6"/>
+
+  <circle cx="32" cy="32" r="22.2" fill="#080b10" stroke="#05070a" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="32" cy="32" r="20.2" fill="#11161d" stroke="url(#rim)" stroke-width="3.2"/>
+  <g stroke="#090d12" stroke-width="0.75" stroke-linejoin="round">
+    <use href="#blade" fill="url(#bladeA)"/>
+    <use href="#blade" fill="url(#bladeB)" transform="rotate(60 32 32)"/>
+    <use href="#blade" fill="url(#bladeA)" transform="rotate(120 32 32)"/>
+    <use href="#blade" fill="url(#bladeB)" transform="rotate(180 32 32)"/>
+    <use href="#blade" fill="url(#bladeA)" transform="rotate(240 32 32)"/>
+    <use href="#blade" fill="url(#bladeB)" transform="rotate(300 32 32)"/>
+  </g>
+  <circle cx="32" cy="32" r="7.5" fill="url(#glass)" stroke="#060a10" stroke-width="1.2"/>
+  <path d="M27.7 29.2c1.3-2.1 3.1-3.2 5.5-3.2" fill="none" stroke="#28d9ff" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="27.4" cy="32.3" r="0.9" fill="#28d9ff"/>
+
+  <g fill="none" stroke="#19d5ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9.5 17v-4.1a3.4 3.4 0 0 1 3.4-3.4H17"/>
+    <path d="M47 9.5h4.1a3.4 3.4 0 0 1 3.4 3.4V17"/>
+    <path d="M54.5 47v4.1a3.4 3.4 0 0 1-3.4 3.4H47"/>
+    <path d="M17 54.5h-4.1a3.4 3.4 0 0 1-3.4-3.4V47"/>
+  </g>
+</svg>

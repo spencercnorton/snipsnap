@@ -1,0 +1,86 @@
+# common
+
+.idea
+.cache
+# C++ objects and libs
+
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.dll
+*.dylib
+
+# Qt-es
+
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile*
+*build-*
+*.qm
+
+# QtCreator
+
+*.autosave
+
+# QtCtreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCtreator CMake
+CMakeLists.txt.user
+
+# python
+venv/*
+__pycache__/
+*.py[cod]
+
+# Created by https://www.gitignore.io/api/snapcraft
+
+### Snapcraft ###
+# Snapcraft
+parts/
+prime/
+stage/
+*.snap
+.snapcraft/
+snipsnap*.tar.bz2
+
+.vscode/
+build/
+data/flatpak/.flatpak-builder
+# NVIM
+*~
+
+# Jetbrains
+.idea/
+.run
+
+# MacOS
+.DS_Store
+
+# End of https://www.gitignore.io/api/snapcraft
+
+#MacOS Crap
+.DS_Store
+
+# Miscellaneous
+!docs/dev/Makefile
+
+# Nix
+result
+result-*
+
+# direnv
+.direnv

@@ -1,0 +1,25 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+
+.snipsnap-shell-bridge-overlay {
+    background-color: transparent;
+}
+
+.snipsnap-shell-bridge-shade {
+    background-color: rgba(0, 0, 0, 0.46);
+}
+
+.snipsnap-shell-bridge-selection {
+    border: 2px solid rgb(0, 204, 153);
+    background-color: rgba(0, 204, 153, 0.035);
+}
+
+.snipsnap-shell-bridge-dimensions,
+.snipsnap-shell-bridge-instructions {
+    color: white;
+    background-color: rgba(24, 24, 28, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    padding: 7px 11px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}

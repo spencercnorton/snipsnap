@@ -1,0 +1,67 @@
+Source: snipsnap
+Section: graphics
+Priority: optional
+Maintainer: NorviTech <apt@globalentry.systems>
+Build-Depends:
+ ca-certificates,
+ cmake (>= 3.22~),
+ dbus-daemon,
+ debhelper (>= 12),
+ git,
+ libglib2.0-bin,
+ python3,
+ qt6-base-dev (>= 6.2.4~),
+ qt6-tools-dev (>= 6.2.4~),
+ qt6-tools-dev-tools (>= 6.2.4~),
+ qt6-svg-dev (>= 6.2.4~) | libqt6svg6-dev (>= 6.2.4~),
+ qt6-l10n-tools (>= 6.2.4~),
+ libgl-dev,
+Rules-Requires-Root: no
+Standards-Version: 4.7.2
+Homepage: https://github.com/spencercnorton/snipsnap
+Vcs-Browser: https://github.com/spencercnorton/snipsnap
+Vcs-Git: https://github.com/spencercnorton/snipsnap.git
+
+Package: snipsnap
+Architecture: any
+# Native Wayland rendering and GNOME palette integration are product
+# requirements, not optional developer conveniences. snipsnap-annotator is a
+# python3 script that drives gsettings; neither dependency is guaranteed by
+# the Qt stack on a minimal install.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ hicolor-icon-theme,
+ qt6-qpa-plugins (>= 6.2.4~),
+ qt6-wayland (>= 6.2.4~),
+ qt6-gtk-platformtheme (>= 6.2.4~),
+ python3,
+ libglib2.0-bin,
+ dconf-cli,
+Recommends:
+ xdg-desktop-portal-gnome | xdg-desktop-portal-kde | xdg-desktop-portal-wlr,
+Suggests:
+ qt6-image-formats-plugins,
+ xdg-desktop-portal-gtk,
+ wl-clipboard,
+# SnipSnap ships /usr/bin/flameshot as a compatibility symlink, which a
+# distribution's own flameshot package also owns, so the two genuinely cannot
+# be co-installed -- say so rather than letting dpkg discover it as a file
+# conflict. Provides keeps anything depending on the old name resolvable.
+# These three lines are the only place this package still names another
+# program, and they are load-bearing: dropping them lets an apt upgrade
+# silently replace someone's flameshot, which is the trap the rename avoided.
+Conflicts: flameshot
+Replaces: flameshot
+Provides: flameshot
+Description: Take and annotate screenshots, on every monitor at once
+ SnipSnap is a screenshot tool for Linux desktops. Select a region with the
+ mouse, annotate it, then copy or save it.
+ .
+ On GNOME Wayland it installs a Shell extension that draws the selection
+ overlay inside the compositor. That is what makes a selection spanning
+ several monitors possible, and it is why the screen never flashes a portal
+ permission dialog before every capture.
+ .
+ It has no update checker and no image-host uploader; nothing it does leaves
+ the machine.

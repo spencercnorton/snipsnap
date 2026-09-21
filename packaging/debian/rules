@@ -1,0 +1,80 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# The GNOME Shell bridge is the reason this fork exists, so the package always
+# builds it in. On a session that is not GNOME Wayland the receiver simply
+# never gets a client and SnipSnap falls back to the portal capture path; the
+# extension on disk is inert until someone enables it.
+EXTENSION_UUID = snipsnap-shell-bridge@kleos.norvi.tech
+EXTENSION_SOURCE = contrib/gnome-shell-extension/snipsnap-shell-bridge
+EXTENSION_DEST = debian/snipsnap/usr/share/gnome-shell/extensions/$(EXTENSION_UUID)
+EXTENSION_SUPPORT_DEST = debian/snipsnap/usr/lib/snipsnap/gnome-shell
+EXTENSION_SUPPORT_SOURCE = $(EXTENSION_SUPPORT_DEST)/source/snipsnap-shell-bridge
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	# The existence of an empty .git directory triggers syncqt.
+	mkdir .git || true
+	# This is required to use Cmake FetchContent
+	dh_auto_configure -- \
+		-DFETCHCONTENT_FULLY_DISCONNECTED=OFF \
+		-DBUILD_TESTING=ON \
+		-DDISABLE_UPDATE_CHECKER=ON \
+		-DENABLE_IMGUR=OFF \
+		-DENABLE_GNOME_SHELL_BRIDGE=ON
+
+override_dh_auto_install:
+	dh_auto_install
+	# Remove not required headers, etc.
+	rm -rf debian/snipsnap/usr/include
+	rm -rf debian/snipsnap/usr/lib
+	# The binary is `snipsnap`. `flameshot` survives only as a compatibility
+	# symlink, because the package still Provides: flameshot -- anything that
+	# depends on that name would otherwise resolve and then fail to exec.
+	ln -sf snipsnap debian/snipsnap/usr/bin/flameshot
+	install -m 0755 packaging/snipsnap-annotator \
+		debian/snipsnap/usr/bin/snipsnap-annotator
+	# Ship the transactional per-user bridge activator and its deterministic
+	# packager. Maintainer scripts must never mutate a logged-in user's dconf;
+	# the user (or an OS integration) runs this after a Shell restart instead.
+	install -m 0755 packaging/gnome-shell/manage_shell_bridge.py \
+		debian/snipsnap/usr/bin/snipsnap-shell-bridge
+	install -d $(EXTENSION_SUPPORT_DEST)
+	install -m 0755 packaging/gnome-shell/package-extension.py \
+		$(EXTENSION_SUPPORT_DEST)/package-extension.py
+	install -m 0755 tests/validate_gnome_shell_extension.py \
+		$(EXTENSION_SUPPORT_DEST)/validate_gnome_shell_extension.py
+	install -m 0644 contrib/gnome-shell-extension/install-manifest.json \
+		$(EXTENSION_SUPPORT_DEST)/install-manifest.json
+	# Keep a pristine source copy for per-user installation. The system copy
+	# below gains gschemas.compiled and therefore cannot be bundled directly.
+	install -d $(EXTENSION_SUPPORT_SOURCE)/schemas
+	install -m 0644 $(EXTENSION_SOURCE)/*.js $(EXTENSION_SOURCE)/*.css \
+		$(EXTENSION_SOURCE)/metadata.json $(EXTENSION_SUPPORT_SOURCE)/
+	install -m 0644 $(EXTENSION_SOURCE)/schemas/*.gschema.xml \
+		$(EXTENSION_SUPPORT_SOURCE)/schemas/
+	# The extension keeps its schema in its own directory rather than
+	# /usr/share/glib-2.0/schemas: Extension.getSettings() looks there first,
+	# and a Shell extension's keys have no business in the global schema
+	# namespace. glib-compile-schemas must therefore run at build time --
+	# nothing else will compile this directory later.
+	install -d $(EXTENSION_DEST)/schemas
+	install -m 0644 $(EXTENSION_SOURCE)/*.js $(EXTENSION_SOURCE)/*.css \
+		$(EXTENSION_SOURCE)/metadata.json $(EXTENSION_DEST)/
+	install -m 0644 $(EXTENSION_SOURCE)/schemas/*.gschema.xml \
+		$(EXTENSION_DEST)/schemas/
+	glib-compile-schemas --strict $(EXTENSION_DEST)/schemas
