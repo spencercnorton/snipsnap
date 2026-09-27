@@ -44,3 +44,5 @@ Record the running version and image digest before an upgrade. Back up state,
 rehearse its restore, and preserve the previous artifact. Database migrations
 can make a binary-only downgrade unsafe; recover the matching backup when a
 migration is not reversible. Never mutate an existing release tag.
+
+Debian packages target Ubuntu 26.04 amd64. CI builds in the pinned Ubuntu 26.04 container and verifies the packaged install before uploading the release candidate. A build from another distribution is not a supported package for this APT suite.

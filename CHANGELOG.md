@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.4 — 2026-09-27
+
+- Build and install-test Debian packages on Ubuntu 26.04, avoiding the
+  incompatible Qt dependency names from Ubuntu 24.04 packages.
+
+
 One entry per tagged release, newest first; the entry is the GitHub Release
 body. Versions before 1.0.0 were published under the upstream name and are
 recorded in `packaging/debian/changelog`.
