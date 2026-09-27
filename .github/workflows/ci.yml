@@ -18,6 +18,8 @@ jobs:
       DEBIAN_FRONTEND: noninteractive
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
       - name: Install build dependencies
         run: |
           sudo apt-get update -q
@@ -46,6 +48,8 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
       # gjs_shell_bridge_handoff_test.py imports gi at module level; the GObject
       # bindings only exist for the system python3, which is what runs pytest.
       - run: sudo apt-get update -q && sudo apt-get install -q -y --no-install-recommends python3-gi
@@ -60,6 +64,8 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
       # node:test only; the runner image ships Node (22 at the time of writing), so no setup-node.
       - run: node --test tests/*.test.mjs
         working-directory: contrib/gnome-shell-extension
