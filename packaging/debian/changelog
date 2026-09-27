@@ -1,3 +1,10 @@
+snipsnap (2.0.3-1) unstable; urgency=medium
+
+  * Move development and verified releases to GitHub.
+  * Add setup, configuration and operations documentation.
+
+ -- NorviTech <131503564+spencercnorton@users.noreply.github.com>  Sun, 27 Sep 2026 12:40:00 +0000
+
 snipsnap (2.0.2-1kleos1) unstable; urgency=medium
 
   * First public release on GitHub: the source tree is published at
