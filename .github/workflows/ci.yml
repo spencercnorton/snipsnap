@@ -2,28 +2,34 @@
 # read-only token, GitHub-owned actions pinned by commit, GitHub-hosted runners.
 name: CI
 on:
+  workflow_call:
   pull_request:
   push:
     branches: [main]
 permissions:
   contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
     # Ubuntu 24.04 ships Qt 6.4.2, above the 6.2 floor packaging/debian/control sets.
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 45
     permissions:
       contents: read
     env:
       DEBIAN_FRONTEND: noninteractive
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
       - name: Install build dependencies
         run: |
           sudo apt-get update -q
           sudo apt-get install -q -y --no-install-recommends \
-            cmake ninja-build dbus-daemon libgl-dev python3 \
-            qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-svg-dev qt6-l10n-tools
+            build-essential cmake ninja-build dbus-daemon libgl-dev python3 \
+            qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-svg-dev qt6-l10n-tools debhelper
       # Qt-Color-Widgets and KDSingleApplication are fetched by CMake at pinned commits.
       - name: Configure
         run: |
@@ -38,6 +44,19 @@ jobs:
         run: cmake --build build --parallel 4
       - name: Test
         run: ctest --test-dir build --output-on-failure --no-tests=error
+      - name: Build Debian candidate from the public tree
+        run: |
+          cp -a packaging/debian debian
+          dpkg-buildpackage -us -uc -b
+          mkdir -p dist
+          cp ../snipsnap_*.deb dist/
+          cd dist && sha256sum *.deb > SHA256SUMS.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: snipsnap-debian-candidate
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
 
   python-tests:
     runs-on: ubuntu-24.04
@@ -46,6 +65,8 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
       # gjs_shell_bridge_handoff_test.py imports gi at module level; the GObject
       # bindings only exist for the system python3, which is what runs pytest.
       - run: sudo apt-get update -q && sudo apt-get install -q -y --no-install-recommends python3-gi
@@ -60,6 +81,8 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
       # node:test only; the runner image ships Node (22 at the time of writing), so no setup-node.
       - run: node --test tests/*.test.mjs
         working-directory: contrib/gnome-shell-extension

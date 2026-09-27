@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 # cmake_policy(SET CMP0076 OLD)
 
-set(SNIPSNAP_VERSION 2.0.2)
+set(SNIPSNAP_VERSION 2.0.3)
 
 # SnipSnap downstream release metadata.
 # No release feed: DISABLE_UPDATE_CHECKER is on and apt is the update

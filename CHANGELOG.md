@@ -4,6 +4,11 @@ One entry per tagged release, newest first; the entry is the GitHub Release
 body. Versions before 1.0.0 were published under the upstream name and are
 recorded in `packaging/debian/changelog`.
 
+## 2.0.3 — 2026-09-27
+
+- Establish GitHub pull requests as the development workflow, with privacy checks.
+- Add deployment, configuration, security, upgrade and recovery documentation.
+
 ## 2.0.2 — 2026-09-21
 
 First public release on GitHub. No change to the program: this is 2.0.1 with

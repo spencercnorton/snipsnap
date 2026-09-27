@@ -141,6 +141,9 @@ There is no Flatpak, Snap or AppImage.
 
 ## Documentation
 
+- [Deployment and operations guide](docs/OPERATIONS.md) — setup, configuration, verification, upgrades, recovery and troubleshooting.
+- [Releasing](docs/RELEASING.md) — public builds, release checks and private deployment boundaries.
+
 - [How capture works on GNOME Wayland](docs/architecture.md) — the bridge,
   the socket protocol, the editor
 - [The GNOME Shell bridge](docs/gnome-shell-bridge.md) — inspect, activate,
@@ -190,7 +193,7 @@ Nothing is sent anywhere: SnipSnap makes no network connections at all.
 
 - Bugs and feature requests: [open an issue](https://github.com/spencercnorton/snipsnap/issues/new/choose). Questions: [Discussions](https://github.com/spencercnorton/snipsnap/discussions).
 - Security reports: [private vulnerability reporting](https://github.com/spencercnorton/snipsnap/security/advisories/new) — see [SECURITY.md](SECURITY.md). There is no e-mail address; that is deliberate.
-- Pull requests are welcome; read [CONTRIBUTING.md](CONTRIBUTING.md) first — this repository is a release mirror, and accepted changes ship in the next tagged release.
+- Pull requests are welcome; read [CONTRIBUTING.md](CONTRIBUTING.md) first — changes are reviewed and merged on GitHub, then shipped in tagged releases.
 - If SnipSnap saves you time, you can [support its development](https://buy.stripe.com/8x26oH2U44f65TRe574wM04).
 
 ## Development
