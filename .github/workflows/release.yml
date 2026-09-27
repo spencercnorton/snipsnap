@@ -35,6 +35,8 @@ jobs:
         run: |
           printf '%s\n' "$RELEASE_TAG" | grep -Eq '^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$'
           git merge-base --is-ancestor HEAD origin/main
+          VERSION=$(sed -n 's/^set(SNIPSNAP_VERSION \([^)]*\))/\1/p' CMakeLists.txt)
+          test "$RELEASE_TAG" = "v$VERSION"
       - name: Create release asset directory
         run: mkdir -p release-assets
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
@@ -43,6 +45,12 @@ jobs:
           path: release-assets
       - name: Remove candidate checksum before final asset checksums
         run: rm release-assets/SHA256SUMS.txt
+      - name: Verify package release identity
+        run: |
+          for PACKAGE in release-assets/*.deb; do
+            VERSION=$(dpkg-deb --field "$PACKAGE" Version)
+            test "${VERSION%%-*}" = "${RELEASE_TAG#v}"
+          done
       - name: Package the exact public source
         run: |
           git archive --format=tar.gz --prefix=source/ HEAD > release-assets/source.tar.gz
