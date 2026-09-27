@@ -2,6 +2,7 @@
 # read-only token, GitHub-owned actions pinned by commit, GitHub-hosted runners.
 name: CI
 on:
+  workflow_call:
   pull_request:
   push:
     branches: [main]
