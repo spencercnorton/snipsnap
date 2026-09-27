@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">SnipSnap for GNOME Wayland</title>
+  <desc id="description">A social preview card showing a single region selection spanning two monitors.</desc>
+  <defs>
+    <linearGradient id="leftShade" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#07090f" stop-opacity="0.98"/>
+      <stop offset="0.54" stop-color="#07090f" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#07090f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bottomShade" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#07090f" stop-opacity="0"/>
+      <stop offset="1" stop-color="#07090f" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <image href="social-preview-background-v1.png" x="0" y="0" width="1280" height="640" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1280" height="640" fill="url(#leftShade)"/>
+  <rect width="1280" height="640" fill="url(#bottomShade)"/>
+  <rect x="82" y="126" width="8" height="8" rx="4" fill="#93c5fd"/>
+  <text x="108" y="134" fill="#c8d7ef" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3">GNOME WAYLAND CAPTURE</text>
+  <text x="82" y="242" fill="#ffffff" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="-2">SnipSnap</text>
+  <text x="82" y="304" fill="#d6e4fa" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="500">One region. Every monitor.</text>
+  <line x1="82" y1="360" x2="342" y2="360" stroke="#9bc8ff" stroke-width="3"/>
+  <text x="82" y="414" fill="#b9c7dc" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="25">Compositor-native selection</text>
+  <text x="82" y="452" fill="#b9c7dc" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="25">for your whole GNOME workspace</text>
+  <rect x="82" y="524" width="164" height="42" rx="21" fill="#dbeafe" fill-opacity="0.15" stroke="#9bc8ff" stroke-opacity="0.55"/>
+  <text x="108" y="552" fill="#e8f2ff" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600">GPL-3.0 · Qt 6</text>
+</svg>
