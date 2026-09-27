@@ -8,6 +8,9 @@ on:
     branches: [main]
 permissions:
   contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
     # Ubuntu 24.04 ships Qt 6.4.2, above the 6.2 floor packaging/debian/control sets.
