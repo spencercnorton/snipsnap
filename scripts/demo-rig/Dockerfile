@@ -35,7 +35,7 @@ RUN set -eu; \
 RUN set -eu; \
     apt-get install --yes --no-install-recommends \
       gnome-text-editor gnome-calculator adwaita-icon-theme fonts-cantarell fonts-noto-core \
-      gsettings-desktop-schemas dconf-gsettings-backend python3-pil curl \
+      gsettings-desktop-schemas dconf-gsettings-backend python3-pil ffmpeg curl \
       qt6-svg-plugins qt6-gtk-platformtheme qt6-wayland; \
     mkdir -p /home/demo; \
     rm -rf /var/lib/apt/lists/*

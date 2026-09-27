@@ -47,7 +47,11 @@ per-monitor boundary; the committed region is handed to the SnipSnap
 daemon over a private socket and the editor opens with exactly that region.
 
 <p align="center">
-  <img alt="Print is pressed, the desktop dims, a selection is dragged across two monitors, Return opens the editor, an arrow, a rectangle, a label and a pixelated patch are added, and the result is copied" src="docs/screenshots/flow.png" width="900">
+  <img alt="Animation: Pressing Print dims a two-monitor GNOME desktop, then a single selection is dragged from the text editor on the left monitor into the calculator on the right" src="docs/screenshots/bridge-selection.gif" width="900">
+</p>
+
+<p align="center">
+  <img alt="Animation: The selected region opens in SnipSnap, an arrow, rectangle, label and pixelation are added, and Copy returns to the desktop" src="docs/screenshots/capture-to-annotate.gif" width="900">
 </p>
 
 **A full editor, in the same process.** Arrows, rectangles, circles,
