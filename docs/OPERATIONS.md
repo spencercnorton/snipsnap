@@ -12,6 +12,22 @@ Wayland user session for the Shell bridge. Confirm your session with
 `echo "$XDG_SESSION_TYPE"` and record `gnome-shell --version` before diagnosing
 extension compatibility.
 
+For a manual GitHub install, use v2.0.4 or newer: these Debian packages are
+built and install-tested on Ubuntu 26.04. Download the `.deb`, `source.tar.gz`
+and `SHA256SUMS.txt` from the same [release](https://github.com/spencercnorton/snipsnap/releases)
+into an empty directory, then verify all downloaded bytes before installation:
+
+```bash
+sha256sum --check SHA256SUMS.txt
+sudo apt install ./snipsnap_2.0.4-1_amd64.deb
+snipsnap --version
+```
+
+Version 2.0.3's Debian asset was built on Ubuntu 24.04 and cannot satisfy its
+Qt dependency on 26.04. Its tag and assets remain available for historical
+reference. GitHub installs are versioned manual updates; the signed APT feed
+publishes on its own schedule. Use the APT route for managed upgrades:
+
 ```bash
 curl -fsSL https://apt.globalentry.systems/setup.sh -o /tmp/norvitech-apt-setup.sh
 # Read the downloaded repository setup script before running it.
