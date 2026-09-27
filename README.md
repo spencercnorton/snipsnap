@@ -109,6 +109,21 @@ then run the same command again; only after the bridge and the SnipSnap
 receiver are both proven active does it hand over <kbd>Print</kbd>. Press
 <kbd>Print</kbd>, drag a region, release, press <kbd>Enter</kbd>.
 
+### Choose the capture path before your first capture
+
+SnipSnap deliberately has two region-capture paths. They share the same
+editor, clipboard and save choices, but their selection UI is different:
+
+| Use this | Path | What to expect |
+| --- | --- | --- |
+| <kbd>Print</kbd> (or the configured extension shortcut) after bridge activation on GNOME Wayland | **GNOME Shell bridge** | A compositor-native selection that can span monitors; no portal dialog. |
+| The tray menu's **Take Screenshot (Desktop Portal)** action, `snipsnap gui`, or the D-Bus interface | **Desktop portal** | A portal permission dialog and a region on one selected monitor. This is expected, including on GNOME. |
+
+Run `snipsnap-shell-bridge status` when you are unsure which route <kbd>Print</kbd>
+will use. A working bridge reports both `extension_active: true` and a ready
+receiver. The tray and `snipsnap gui` always use the desktop-portal route, so
+a dialog there does not mean the GNOME bridge is broken.
+
 Installing `snipsnap` replaces the Flameshot package if it is present; the
 two cannot be co-installed, because SnipSnap keeps the `flameshot` command
 as a compatibility symlink. On first launch your existing Flameshot settings

@@ -178,6 +178,12 @@ if(Python3_Interpreter_FOUND)
   set_tests_properties(unit.product_identity_test PROPERTIES TIMEOUT 15)
 
   add_test(
+    NAME unit.capture_path_onboarding_test
+    COMMAND ${Python3_EXECUTABLE}
+            ${CMAKE_CURRENT_SOURCE_DIR}/capture_path_onboarding_test.py)
+  set_tests_properties(unit.capture_path_onboarding_test PROPERTIES TIMEOUT 15)
+
+  add_test(
     NAME unit.capture_trace_summary_test
     COMMAND ${Python3_EXECUTABLE}
             ${CMAKE_CURRENT_SOURCE_DIR}/capture_trace_summary_test.py)

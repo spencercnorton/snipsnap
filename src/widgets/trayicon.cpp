@@ -117,7 +117,8 @@ void TrayIcon::initMenu()
 {
     m_menu = new QMenu();
 
-    m_captureAction = new QAction(tr("&Take Screenshot"), this);
+    m_captureAction =
+      new QAction(tr("&Take Screenshot (Desktop Portal)"), this);
 
     updateCaptureActionShortcut();
 

@@ -27,8 +27,9 @@ CaptureLauncher::CaptureLauncher(QDialog* parent)
     setAttribute(Qt::WA_DeleteOnClose);
     setWindowIcon(QIcon(GlobalValues::iconPath()));
 
-    ui->captureType->insertItem(
-      1, tr("Rectangular Region"), CaptureRequest::GRAPHICAL_MODE);
+    ui->captureType->insertItem(1,
+                                tr("Rectangular Region (Desktop Portal)"),
+                                CaptureRequest::GRAPHICAL_MODE);
 
 #if defined(Q_OS_MACOS)
     // Following to MacOS philosophy (one application cannot be displayed on

@@ -28,9 +28,21 @@ again. Do not restart GNOME Shell in a live Wayland session.
 
 ## First capture and configuration
 
-Press Print, select a region, release and press Enter. Add annotations, then
-copy or save. Check a second monitor and a mixed-scale layout if you use them.
-The portal path is also available through `snipsnap gui`.
+First choose the capture route that matches your desktop:
+
+- **GNOME Shell bridge:** after activation, press `Print` (or the configured
+  extension shortcut), select a region, release and press Enter. This is the
+  compositor-native path: it spans monitors and does not show a portal dialog.
+- **Desktop portal:** the tray action labelled **Take Screenshot (Desktop
+  Portal)**, `snipsnap gui`, and the D-Bus interface always use the portal.
+  A permission dialog and a one-monitor selection are expected, including on
+  GNOME.
+
+`snipsnap-shell-bridge status` reports whether the bridge is active and its
+receiver is ready. Use it before diagnosing a portal dialog from `Print`; a
+dialog from the tray or `snipsnap gui` is normal. Add annotations after the
+selection, then copy or save. Check a second monitor and a mixed-scale layout
+if you use them.
 
 ```bash
 snipsnap --version

@@ -8,6 +8,8 @@ recorded in `packaging/debian/changelog`.
 
 - Establish GitHub pull requests as the development workflow, with privacy checks.
 - Add deployment, configuration, security, upgrade and recovery documentation.
+- Label the desktop-portal tray and launcher actions, and explain beside the
+  first-capture instructions how they differ from the GNOME Shell bridge.
 
 ## 2.0.2 — 2026-09-21
 
